@@ -43,3 +43,24 @@ related: ["customize/workspaces", "customize/toolbars", "color/palettes", "brush
 2. 将当前的`workspaces`文件夹移至其他位置。
 3. 将备份复制到原位置，文件夹名称为`workspaces`。
 4. 打开{appName}。
+
+## 自动副本
+
+{appName}会在不同版本的应用保存更改之前，自动复制工作区、工具栏、调色板和画笔设置。最多保留十个近期副本。副本较大时保留数量会减少，但创建了至少三个副本后，会保留最新的三个。在Android、iPad和网页版中，副本存放在应用或浏览器内部。
+
+如果旧版本的{appName}重置了工作区，下次打开时，{appName}会在“**恢复工作区？**”对话框中提供**恢复**或**保留当前设置**选项。
+
+损坏的工作区文件会保留为`workspaces.damaged.<id>.sqlite3`，{appName}会启用新的工作区。
+
+## 恢复自动副本
+
+在桌面上，副本是`workspaces`文件夹中名为`workspaces.<version>.<id>.sqlite3`的文件。名称中的版本表示最后保存这些设置的应用版本。`earlier`表示未记录版本。恢复会替换创建副本之后对工作区所做的更改。
+
+恢复自动副本：
+
+1. 退出所有正在运行的{appName}。
+2. 打开上方所列的`workspaces`文件夹。
+3. 将`workspaces.sqlite3`和存在的`workspaces.sqlite3-wal`、`workspaces.sqlite3-shm`、`last-version`文件移至其他文件夹。
+4. 选择要恢复的自动副本。
+5. 将选中的文件以`workspaces.sqlite3`为名称复制到`workspaces`中。
+6. 打开{appName}。

@@ -43,3 +43,24 @@ Para restaurar uma pasta:
 2. Mova a pasta `workspaces` atual para outro local.
 3. Copie o backup para o local original com o nome de pasta `workspaces`.
 4. Abra o {appName}.
+
+## Cópias automáticas
+
+O {appName} faz cópias automáticas das áreas de trabalho, barras de ferramentas, paletas e configurações de pincel antes que outra versão do aplicativo salve alterações. São guardadas até dez cópias recentes. Cópias grandes reduzem essa quantidade, mas as três mais recentes são mantidas quando já existem três cópias. No Android, no iPad e na web, as cópias ficam dentro do aplicativo ou do navegador.
+
+Se uma versão anterior do {appName} redefinir suas áreas de trabalho, o {appName} oferece **Restaurar** ou **Manter atuais** na caixa de diálogo **Restaurar áreas de trabalho?** na próxima vez que for aberto.
+
+Um arquivo de áreas de trabalho danificado é guardado como `workspaces.damaged.<id>.sqlite3`, e o {appName} inicia novas áreas de trabalho.
+
+## Restaurar uma cópia automática
+
+No computador, as cópias são arquivos chamados `workspaces.<version>.<id>.sqlite3` na pasta `workspaces`. A versão no nome identifica o aplicativo que salvou essas configurações pela última vez. `earlier` indica que nenhuma versão foi registrada. A restauração substitui as alterações nas áreas de trabalho feitas desde a cópia.
+
+Para restaurar uma cópia automática:
+
+1. Encerre todas as cópias do {appName} em execução.
+2. Abra a pasta `workspaces` indicada acima.
+3. Mova `workspaces.sqlite3` e os arquivos `workspaces.sqlite3-wal`, `workspaces.sqlite3-shm` e `last-version`, se existirem, para outra pasta.
+4. Selecione a cópia automática que deseja restaurar.
+5. Copie o arquivo selecionado para `workspaces` com o nome `workspaces.sqlite3`.
+6. Abra o {appName}.

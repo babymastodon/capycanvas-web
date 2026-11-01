@@ -43,3 +43,24 @@ related: ["customize/workspaces", "customize/toolbars", "color/palettes", "brush
 2. 將目前的`workspaces`資料夾移至其他位置。
 3. 將備份複製到原位置，資料夾名稱為`workspaces`。
 4. 開啟{appName}。
+
+## 自動複本
+
+{appName}會在不同版本的應用程式儲存變更之前，自動複製工作區、工具列、調色盤和筆刷設定。最多保留十個近期複本。複本較大時保留數量會減少，但建立了至少三個複本後，會保留最新的三個。在Android、iPad和網頁版中，複本存放在應用程式或瀏覽器內部。
+
+如果舊版本的{appName}重設了工作區，下次開啟時，{appName}會在「**還原工作區？**」對話框中提供**恢復**或**保留目前設定**選項。
+
+損壞的工作區檔案會保留為`workspaces.damaged.<id>.sqlite3`，{appName}會啟用新的工作區。
+
+## 恢復自動複本
+
+在桌面上，複本是`workspaces`資料夾中名為`workspaces.<version>.<id>.sqlite3`的檔案。名稱中的版本表示最後儲存這些設定的應用程式版本。`earlier`表示未記錄版本。恢復會取代建立複本之後對工作區所做的變更。
+
+恢復自動複本：
+
+1. 結束所有正在執行的{appName}。
+2. 開啟上方所列的`workspaces`資料夾。
+3. 將`workspaces.sqlite3`和存在的`workspaces.sqlite3-wal`、`workspaces.sqlite3-shm`、`last-version`檔案移至其他資料夾。
+4. 選取要恢復的自動複本。
+5. 將選取的檔案以`workspaces.sqlite3`為名稱複製到`workspaces`中。
+6. 開啟{appName}。

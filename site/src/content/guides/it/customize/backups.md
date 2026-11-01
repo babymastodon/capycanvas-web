@@ -43,3 +43,24 @@ Per ripristinare una cartella:
 2. Sposta la cartella `workspaces` attuale in un’altra posizione.
 3. Copia il backup nella posizione originale con il nome di cartella `workspaces`.
 4. Apri {appName}.
+
+## Copie automatiche
+
+{appName} crea copie automatiche delle aree di lavoro, barre degli strumenti, tavolozze e impostazioni dei pennelli prima che un’altra versione dell’app salvi modifiche. Vengono conservate fino a dieci copie recenti. Le copie grandi ne riducono il numero, ma le tre più recenti vengono mantenute una volta che esistono tre copie. Su Android, iPad e sul web, le copie restano dentro l’app o il browser.
+
+Se una versione precedente di {appName} reimposta le aree di lavoro, {appName} offre **Ripristina** o **Mantieni le attuali** nella finestra **Ripristinare le aree di lavoro?** alla prossima apertura.
+
+Un file delle aree di lavoro danneggiato viene conservato come `workspaces.damaged.<id>.sqlite3` e {appName} avvia nuove aree di lavoro.
+
+## Ripristino di una copia automatica
+
+Su computer, le copie sono file chiamati `workspaces.<version>.<id>.sqlite3` nella cartella `workspaces`. La versione nel nome identifica l’app che ha salvato quelle impostazioni per ultima. `earlier` indica che non è stata registrata alcuna versione. Il ripristino sostituisce le modifiche alle aree di lavoro apportate dopo la copia.
+
+Per ripristinare una copia automatica:
+
+1. Esci da tutte le copie di {appName} in esecuzione.
+2. Apri la cartella `workspaces` indicata sopra.
+3. Sposta `workspaces.sqlite3` e i file `workspaces.sqlite3-wal`, `workspaces.sqlite3-shm` e `last-version`, se presenti, in un’altra cartella.
+4. Seleziona la copia automatica da ripristinare.
+5. Copia il file selezionato in `workspaces` con il nome `workspaces.sqlite3`.
+6. Apri {appName}.

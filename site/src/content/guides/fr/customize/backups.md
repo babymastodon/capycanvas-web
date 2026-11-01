@@ -43,3 +43,24 @@ Pour restaurer un dossier :
 2. Déplacez le dossier `workspaces` actuel à un autre emplacement.
 3. Copiez la sauvegarde à l’emplacement d’origine avec le nom de dossier `workspaces`.
 4. Ouvrez {appName}.
+
+## Copies automatiques
+
+{appName} crée des copies automatiques des espaces de travail, barres d’outils, palettes et réglages de pinceau avant qu’une autre version de l’application enregistre des modifications. Jusqu’à dix copies récentes sont conservées. Les copies volumineuses réduisent ce nombre, mais les trois plus récentes sont conservées dès que trois copies existent. Sur Android, iPad et le web, les copies restent dans l’application ou le navigateur.
+
+Si une ancienne version de {appName} réinitialise vos espaces de travail, {appName} propose **Restaurer** ou **Conserver les actuels** dans la boîte de dialogue **Restaurer les espaces de travail ?** à la prochaine ouverture.
+
+Un fichier d’espaces de travail endommagé est conservé sous le nom `workspaces.damaged.<id>.sqlite3`, et {appName} démarre avec de nouveaux espaces de travail.
+
+## Restauration d’une copie automatique
+
+Sur ordinateur, les copies sont des fichiers nommés `workspaces.<version>.<id>.sqlite3` dans le dossier `workspaces`. La version dans le nom indique l’application qui a enregistré ces réglages en dernier. `earlier` signifie qu’aucune version n’a été enregistrée. La restauration remplace les modifications des espaces de travail effectuées depuis la copie.
+
+Pour restaurer une copie automatique :
+
+1. Quittez toutes les copies de {appName} en cours d’exécution.
+2. Ouvrez le dossier `workspaces` indiqué ci-dessus.
+3. Déplacez `workspaces.sqlite3` et les fichiers `workspaces.sqlite3-wal`, `workspaces.sqlite3-shm` et `last-version`, s’ils existent, dans un autre dossier.
+4. Sélectionnez la copie automatique à restaurer.
+5. Copiez le fichier sélectionné dans `workspaces` sous le nom `workspaces.sqlite3`.
+6. Ouvrez {appName}.
