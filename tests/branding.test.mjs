@@ -29,6 +29,8 @@ test('branding validation rejects literal names and damaged placeholders but pre
   for (const token of ['{appname}', '{AppName}', '{app_name}']) assert.throws(() => checkBrandingSource(`Open ${token}.`, 'translation'), /placeholder unchanged/);
   assert.doesNotThrow(() => checkBrandingSource('Open {appName} at https://editor.capycanvas.art/ or capycanvas.art.', 'translation'));
   assert.doesNotThrow(() => checkBrandingSource('capycanvas.language ../capycanvas CapyCanvas.png', 'identifiers'));
+  assert.doesNotThrow(() => checkBrandingSource(String.raw`%LOCALAPPDATA%\CapyAtelier\CapyCanvas\workspaces`, 'Windows path'));
+  assert.throws(() => checkBrandingSource('`CapyCanvas`', 'literal name'), /use \{appName\}/);
 });
 
 test('all translation sources retain centrally resolved branding', checkBranding);

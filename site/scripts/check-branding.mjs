@@ -9,7 +9,7 @@ const root = new URL('../../', import.meta.url);
 const names = [...new Set([...Object.values(appNames), ...globalBrandAliases])];
 const pattern = new RegExp(names.sort((a, b) => b.length - a.length).map(name => {
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  return globalBrandAliases.includes(name) ? `(?<![\\w/-])${escaped}(?![\\w/-]|\\.[\\w])` : escaped;
+  return globalBrandAliases.includes(name) ? `(?<![\\w/\\\\-])${escaped}(?![\\w/\\\\-]|\\.[\\w])` : escaped;
 }).join('|'), 'giu');
 
 export function checkBrandingSource(source, location) {

@@ -62,6 +62,7 @@ export const docTopics = [
   { slug: 'customize/toolbars', group: 'customize' },
   { slug: 'customize/bubbles', group: 'customize' },
   { slug: 'customize/workspaces', group: 'customize' },
+  { slug: 'customize/backups', group: 'customize' },
   { slug: 'customize/zen', group: 'customize' },
   { slug: 'preferences', group: 'customize' },
   { slug: 'input/pen', group: 'input' },
