@@ -36,7 +36,7 @@ export default async function showcase({ e, capture }) {
   };
   const shots = {
     sketch: {},
-    paint: { setup: () => e.b.until(thumbnailsDrawn, 120000), variant: async () => { await settleLayout(e.b); await e.invoke('fit_canvas'); await e.canvas(); await settleLayout(e.b, undefined, 12); } },
+    paint: { setup: () => e.b.until(thumbnailsDrawn, 120000), variant: async () => { await e.workspace('painter'); await e.workspace('illustrator'); await settleLayout(e.b); await e.invoke('fit_canvas'); await e.canvas(); await settleLayout(e.b, undefined, 12); } },
     photo: { ready: () => e.wait(highlights), setup: async () => { await e.wait(analysed); await e.b.until(thumbnailsDrawn, 120000); } },
   };
 

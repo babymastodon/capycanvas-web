@@ -137,7 +137,10 @@ come from a newer one: prepare that revision and run
 `CAPTURE_ONLY=showcase npm run capture`. `CAPTURE_SCENES=paint` (a comma
 list of `sketch`, `paint`, `photo`) captures only those slides, so each slide's
 still can match the app revision of its demo video. The other images are kept as long as
-their files are unchanged; otherwise the run is marked `partial`.
+their files are unchanged; otherwise the run is marked `partial`. After each language
+switch the Paint slide leaves Paint and comes back, which lays the panels out as a fresh
+start in that language does, so the still matches the first frame of its demo video.
+Panel heights can otherwise depend on the languages shown before.
 
 Reproduction means the same source, actions, artwork and composition. GPU, fonts,
 Chrome versions and input timing can change individual bytes, so review new
