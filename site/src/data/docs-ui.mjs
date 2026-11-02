@@ -49,6 +49,7 @@ export const docsUI = brandTranslations({
     "imageOpen": "Open full-size screenshot",
     "sketchDemo": "Demonstration of arranging floating tools, focusing on the canvas, choosing a green brush and adjusting its softness.",
     "paintDemo": "Demonstration of blending the sky with Painterly Blender and Crystal Blender, then finding and adding Posterize, Crosshatch and Glass in the Filters panel.",
+    "photoDemo": "Demonstration of hiding a logo with the Clone Stamp, cutting out the terrarium onto a sage gradient, adding Film Grain, Vignette, Split Tone and Clarity, and softening a cast shadow with masked Gaussian Blur.",
     "landing": {
       "sections": {
         "sketch": {
@@ -104,7 +105,7 @@ export const docsUI = brandTranslations({
           "text": "Mobile devices are becoming more capable every day. It seems like OLED screens are everywhere, and my old phone saves its images in P3 HDR format by default. SRGB is a thing of the past.\n\nTo this date, the only painting app that properly supports wide gamut HDR is Krita. HDR is a complicated beast and is hard to get right. When you publish HDR and wide-gamut images online, you need to control the gain mapping so that it still looks good on SDR devices. Of course no photo editor is complete without the all of the basics (proofing, effect chains, the whole enchilada)\n\nThe Photo workspace enables stunning visuals for a new generation of wide-gamut screens.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "A terrarium photograph in Photo, with the Tonal range selection tool and Curves and Vibrance adjustment layers."
+            "alt": "A terrarium photograph in Photo, with the subject saved as a selection layer above the photo."
           },
           "links": [
             {
@@ -261,6 +262,7 @@ export const docsUI = brandTranslations({
     "imageOpen": "スクリーンショットを原寸で開く",
     "sketchDemo": "フローティングツールを配置し、キャンバスに集中できる表示に切り替え、緑色のブラシを選んで柔らかさを調整するデモ。",
     "paintDemo": "絵画風混色と結晶混色で空を混色し、フィルターパネルで階調化、クロスハッチ、ガラスを探して追加するデモ。",
+    "photoDemo": "コピースタンプでロゴを消し、テラリウムを切り抜いてセージ色のグラデーションに重ね、フィルム粒子、周辺光量補正、明暗の色分け、明瞭度を加え、マスクしたガウスぼかしで落ち影をやわらげるデモ。",
     "landing": {
       "sections": {
         "sketch": {
@@ -316,7 +318,7 @@ export const docsUI = brandTranslations({
           "text": "モバイル端末は日々進化しています。どこを見てもOLED画面があるようで、私の古いスマートフォンでさえ、標準で画像をP3 HDR形式で保存します。SRGBはもう過去のものです。\n\n今のところ、広色域HDRにきちんと対応している描画アプリはKritaだけです。HDRは複雑で、正しく扱うのは難しいものです。HDRや広色域の画像をオンラインで公開するときは、SDR端末でも見栄えがよくなるよう、ゲインマッピングを調整する必要があります。もちろん、プルーフやエフェクトチェーンなど、基本機能をひととおり備えてこそ写真編集ソフトです。\n\nPhotoワークスペースは、新世代の広色域画面で目を見張るような表現を可能にします。",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Photoワークスペースで表示した、小さなテラリウムの写真。明るさで範囲を選ぶTonal rangeツールと、CurvesとVibranceの調整レイヤーが表示されています。"
+            "alt": "Photoワークスペースで表示した、小さなテラリウムの写真。被写体が選択範囲レイヤーとして写真の上に保存されています。"
           },
           "links": [
             {
@@ -388,6 +390,7 @@ export const docsUI = brandTranslations({
     "imageOpen": "打开原尺寸截图",
     "sketchDemo": "演示如何摆放浮动工具、专注画布、选择绿色画笔并调整其柔软度。",
     "paintDemo": "演示如何用绘画混色和晶体混色融合天空，再在滤镜面板中查找并添加色调分离、交叉排线和玻璃。",
+    "photoDemo": "演示如何用仿制图章去掉标志，把生态缸抠出放到鼠尾草绿渐变上，添加胶片颗粒、暗角、分离色调和清晰度，再用加了蒙版的高斯模糊柔化投影。",
     "landing": {
       "sections": {
         "sketch": {
@@ -443,7 +446,7 @@ export const docsUI = brandTranslations({
           "text": "移动设备的能力每天都在提升。OLED屏幕似乎随处可见，就连我的旧手机也默认将照片保存为P3 HDR格式。SRGB已经是过去的事了。\n\n到目前为止，唯一真正支持广色域HDR的绘画应用是Krita。HDR很复杂，要做好并不容易。在网上发布HDR和广色域图像时，你需要控制增益映射，让图像在SDR设备上也好看。当然，照片编辑器也少不了全部基本功能：软打样、效果链等等，一样都不能少。\n\nPhoto工作区为新一代广色域屏幕带来令人惊艳的视觉效果。",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Photo工作区中的一张小型生态缸照片，显示按亮度选择区域的Tonal range工具，以及Curves和Vibrance调整图层。"
+            "alt": "Photo工作区中的一张小型生态缸照片，主体已作为选区图层保存在照片上方。"
           },
           "links": [
             {
@@ -515,6 +518,7 @@ export const docsUI = brandTranslations({
     "imageOpen": "開啟原始大小截圖",
     "sketchDemo": "示範如何擺放浮動工具、專注畫布、選擇綠色筆刷並調整其柔軟度。",
     "paintDemo": "示範如何用繪畫混色和晶體混色融合天空，再在濾鏡面板中尋找並加入色調分離、交叉排線和玻璃。",
+    "photoDemo": "示範如何用仿製印章去除標誌，把生態缸去背放到鼠尾草綠漸層上，加入底片顆粒、暗角、分離色調和清晰度，再用加上遮色片的高斯模糊柔化投影。",
     "landing": {
       "sections": {
         "sketch": {
@@ -570,7 +574,7 @@ export const docsUI = brandTranslations({
           "text": "行動裝置的能力每天都在提升。OLED螢幕似乎隨處可見，就連我的舊手機也預設將照片儲存為P3 HDR格式。SRGB已經是過去的事了。\n\n到目前為止，唯一真正支援廣色域HDR的繪畫應用程式是Krita。HDR很複雜，要做好並不容易。在網路上發布HDR和廣色域影像時，你需要控制增益映射，讓影像在SDR裝置上也好看。當然，照片編輯器也少不了全部基本功能：軟打樣、效果鏈等等，一樣都不能少。\n\nPhoto工作區為新一代廣色域螢幕帶來令人驚豔的視覺效果。",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Photo工作區中的一張小型生態缸照片，顯示按亮度選擇區域的Tonal range工具，以及Curves和Vibrance調整圖層。"
+            "alt": "Photo工作區中的一張小型生態缸照片，主體已作為選取範圍圖層儲存在照片上方。"
           },
           "links": [
             {
@@ -642,6 +646,7 @@ export const docsUI = brandTranslations({
     "imageOpen": "원본 크기 스크린샷 열기",
     "sketchDemo": "떠 있는 도구를 배치하고, 캔버스에 집중하고, 녹색 브러시를 선택하고 부드러움을 조절하는 시연.",
     "paintDemo": "회화풍 혼색과 결정 혼색으로 하늘을 섞은 뒤, 필터 패널에서 포스터화, 교차선, 유리를 찾아 추가하는 시연.",
+    "photoDemo": "복제 도장으로 로고를 지우고, 테라리움을 오려 세이지색 그라디언트 위에 놓고, 필름 입자, 비네팅, 분할 톤, 선명도를 더한 뒤 마스크한 가우시안 흐림으로 그림자를 부드럽게 하는 시연.",
     "landing": {
       "sections": {
         "sketch": {
@@ -697,7 +702,7 @@ export const docsUI = brandTranslations({
           "text": "모바일 기기는 날마다 더 많은 일을 해냅니다. OLED 화면은 어디에나 있는 것 같고, 제 오래된 휴대폰도 기본적으로 사진을 P3 HDR 형식으로 저장합니다. SRGB는 이제 과거의 일입니다.\n\n지금까지 넓은 색 영역 HDR을 제대로 지원하는 페인팅 앱은 Krita뿐입니다. HDR은 복잡하고 제대로 구현하기 어렵습니다. HDR과 넓은 색 영역 이미지를 온라인에 공개할 때는 SDR 기기에서도 보기 좋도록 게인 매핑을 조절해야 합니다. 물론 교정, 효과 체인 등 기본 기능을 모두 갖춰야 사진 편집기라고 할 수 있습니다.\n\nPhoto 작업 영역은 새로운 세대의 넓은 색 영역 화면에서 눈길을 사로잡는 시각 표현을 가능하게 합니다.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Photo 작업 공간에 표시한 작은 테라리움 사진. 밝기로 영역을 선택하는 Tonal range 도구와 Curves, Vibrance 조정 레이어가 보입니다."
+            "alt": "Photo 작업 공간에 표시한 작은 테라리움 사진. 피사체가 사진 위에 선택 영역 레이어로 저장되어 있습니다."
           },
           "links": [
             {

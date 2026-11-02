@@ -54,7 +54,7 @@ const previousSources = previous.sources ?? { [previous.revision]: { source: pre
 
 const recipeFiles = async dir => (await readdir(dir, { withFileTypes: true })).flatMap(entry => entry.isDirectory() ? [] : [join(dir, entry.name)]);
 const recipePaths = [
-  ...['capture.mjs', 'browser.mjs', 'serve.mjs', 'capture-headless.sh', 'prepare-capture.mjs', 'capture-compatibility.mjs'].map(path => `site/scripts/${path}`),
+  ...['capture.mjs', 'browser.mjs', 'serve.mjs', 'capture-headless.sh', 'prepare-capture.mjs', 'capture-compatibility.mjs', 'capture/demo/photo-journey.mjs', 'capture/demo/photo-outline.json'].map(path => `site/scripts/${path}`),
   ...(await recipeFiles('site/scripts/capture')).filter(path => path.endsWith('.mjs')),
   ...(await recipeFiles('site/scripts/capture/docs')).filter(path => path.endsWith('.mjs')),
 ].sort();

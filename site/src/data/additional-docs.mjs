@@ -48,6 +48,7 @@ export const additionalDocsUI = {
     "imageOpen": "Abrir captura de pantalla en tamaño completo",
     "sketchDemo": "Demostración de cómo colocar herramientas flotantes, centrarse en el lienzo, elegir un pincel verde y ajustar su suavidad.",
     "paintDemo": "Demostración de cómo mezclar el cielo con Mezclador pictórico y Mezclador de cristal, y de cómo buscar y añadir Posterizar, Trama cruzada y Vidrio en el panel Filtros.",
+    "photoDemo": "Demostración de cómo borrar un logotipo con el Tampón de clonar, recortar el terrario sobre un degradado verde salvia, añadir Grano de película, Viñeta, Virado dividido y Claridad, y suavizar una sombra con Desenfoque gaussiano enmascarado.",
     "landing": {
       "sections": {
         "sketch": {
@@ -103,7 +104,7 @@ export const additionalDocsUI = {
           "text": "Los dispositivos móviles son cada día más capaces. Parece que las pantallas OLED están por todas partes y mi viejo teléfono guarda sus imágenes en formato P3 HDR de forma predeterminada. SRGB es cosa del pasado.\n\nHasta la fecha, la única aplicación de pintura que admite correctamente HDR de amplia gama de colores es Krita. El HDR es complicado y cuesta hacerlo bien. Cuando publicas imágenes HDR y de amplia gama en internet, necesitas controlar el mapeo de ganancia para que también se vean bien en dispositivos SDR. Por supuesto, ningún editor de fotos está completo sin todas las funciones básicas: pruebas de color, cadenas de efectos y todo lo demás.\n\nEl espacio de trabajo Photo permite crear imágenes impresionantes para una nueva generación de pantallas de amplia gama de colores.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Una fotografía de un pequeño terrario en el espacio de trabajo Photo, con la herramienta Rango tonal lista para seleccionar por brillo y capas de ajuste de Curvas e Intensidad."
+            "alt": "Una fotografía de un pequeño terrario en el espacio de trabajo Photo, con el motivo guardado como capa de selección sobre la foto."
           },
           "links": [
             {
@@ -175,6 +176,7 @@ export const additionalDocsUI = {
     "imageOpen": "Abra a captura de tela em tamanho real",
     "sketchDemo": "Demonstração de como posicionar ferramentas flutuantes, focar na tela, escolher um pincel verde e ajustar sua suavidade.",
     "paintDemo": "Demonstração de como misturar o céu com Misturador pictórico e Misturador cristalino e de como encontrar e adicionar Posterizar, Hachura cruzada e Vidro no painel Filtros.",
+    "photoDemo": "Demonstração de como apagar um logotipo com o Carimbo de clonagem, recortar o terrário sobre um degradê verde-sálvia, adicionar Grão de filme, Vinheta, Tonalização dividida e Claridade e suavizar uma sombra com Desfoque gaussiano mascarado.",
     "landing": {
       "sections": {
         "sketch": {
@@ -230,7 +232,7 @@ export const additionalDocsUI = {
           "text": "Os dispositivos móveis ficam mais capazes a cada dia. Parece que telas OLED estão por toda parte, e meu celular antigo salva suas imagens em P3 HDR por padrão. SRGB é coisa do passado.\n\nAté hoje, o único aplicativo de pintura que suporta corretamente HDR com ampla gama de cores é o Krita. HDR é complicado e difícil de fazer direito. Quando você publica imagens HDR e de ampla gama na internet, precisa controlar o mapeamento de ganho para que elas também fiquem boas em dispositivos SDR. Claro que nenhum editor de fotos está completo sem todas as funções básicas: prova de cores, cadeias de efeitos e todo o resto.\n\nO espaço de trabalho Photo permite criar imagens impressionantes para uma nova geração de telas de ampla gama de cores.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Uma fotografia de um pequeno terrário na área de trabalho Photo, com a ferramenta Faixa tonal pronta para selecionar por brilho e camadas de ajuste de Curvas e Vibração."
+            "alt": "Uma fotografia de um pequeno terrário na área de trabalho Photo, com o tema salvo como camada de seleção acima da foto."
           },
           "links": [
             {
@@ -302,6 +304,7 @@ export const additionalDocsUI = {
     "imageOpen": "Buka tangkapan layar ukuran penuh",
     "sketchDemo": "Demonstrasi menata alat mengambang, berfokus pada kanvas, memilih kuas hijau, dan menyesuaikan kelembutannya.",
     "paintDemo": "Demonstrasi membaurkan langit dengan Pembaur Lukis dan Pembaur Kristal, lalu mencari dan menambahkan Posterisasi, Arsir Silang, dan Kaca di panel Filter.",
+    "photoDemo": "Demonstrasi menghapus logo dengan Stempel Klon, memotong terarium ke atas gradasi hijau sage, menambahkan Butiran Film, Vinyet, Nada Terpisah, dan Kejernihan, lalu melembutkan bayangan dengan Kabur Gaussian bermasker.",
     "landing": {
       "sections": {
         "sketch": {
@@ -357,7 +360,7 @@ export const additionalDocsUI = {
           "text": "Perangkat seluler makin mampu melakukan banyak hal setiap hari. Layar OLED tampaknya ada di mana-mana, dan ponsel lama saya menyimpan gambar dalam format P3 HDR secara bawaan. SRGB sudah menjadi masa lalu.\n\nHingga kini, satu-satunya aplikasi melukis yang mendukung HDR bergamut luas dengan benar adalah Krita. HDR rumit dan sulit ditangani dengan baik. Saat menerbitkan gambar HDR dan bergamut luas di internet, Anda perlu mengendalikan pemetaan gain agar gambar tetap terlihat bagus di perangkat SDR. Tentu saja, editor foto belum lengkap tanpa semua fungsi dasar: proofing, rantai efek, dan segala sisanya.\n\nRuang kerja Photo memungkinkan visual yang memukau untuk generasi baru layar bergamut luas.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Foto terarium kecil di ruang kerja Photo, dengan alat rentang Tonal yang siap dipilih berdasarkan kecerahan, serta lapisan penyesuaian Curves dan Vibrance."
+            "alt": "Foto terarium kecil di ruang kerja Photo, dengan subjek tersimpan sebagai lapisan seleksi di atas foto."
           },
           "links": [
             {
@@ -429,6 +432,7 @@ export const additionalDocsUI = {
     "imageOpen": "Ouvrir la capture d'écran en taille réelle",
     "sketchDemo": "Démonstration du placement des outils flottants, du mode de concentration sur la toile, du choix d’un pinceau vert et du réglage de sa douceur.",
     "paintDemo": "Démonstration du mélange du ciel avec le Mélangeur pictural et le Mélangeur cristallin, puis de la recherche et de l’ajout de Postérisation, Hachures croisées et Verre dans le panneau Filtres.",
+    "photoDemo": "Démonstration de l’effacement d’un logo au Tampon de duplication, du détourage du terrarium sur un dégradé vert sauge, de l’ajout de Grain de film, Vignettage, Virage partiel et Clarté, puis de l’adoucissement d’une ombre portée avec un Flou gaussien masqué.",
     "landing": {
       "sections": {
         "sketch": {
@@ -484,7 +488,7 @@ export const additionalDocsUI = {
           "text": "Les appareils mobiles sont chaque jour plus capables. Les écrans OLED semblent être partout, et mon vieux téléphone enregistre ses images au format P3 HDR par défaut. Le SRGB appartient au passé.\n\nÀ ce jour, la seule application de peinture qui prend correctement en charge le HDR à large gamut est Krita. Le HDR est complexe et difficile à maîtriser. Quand vous publiez des images HDR et à large gamut en ligne, vous devez contrôler le mappage de gain pour qu’elles restent agréables à regarder sur les appareils SDR. Bien sûr, aucun éditeur photo n’est complet sans toutes les fonctions de base : épreuvage, chaînes d’effets et tout le reste.\n\nL’espace de travail Photo permet de créer des images saisissantes pour une nouvelle génération d’écrans à large gamut.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec l'outil Plage de tons prêt à sélectionner par luminosité et les calques de réglage Courbes et Vibrance."
+            "alt": "Une photographie d'un petit terrarium dans l'espace de travail Photo, avec le sujet enregistré comme calque de sélection au-dessus de la photo."
           },
           "links": [
             {
@@ -556,6 +560,7 @@ export const additionalDocsUI = {
     "imageOpen": "Öffnen Sie den Screenshot in voller Größe",
     "sketchDemo": "Vorführung: schwebende Werkzeuge anordnen, auf die Leinwand konzentrieren, einen grünen Pinsel wählen und seine Weichheit einstellen.",
     "paintDemo": "Vorführung: den Himmel mit „Malerischer Mischpinsel“ und „Kristall-Mischpinsel“ vermischen, dann „Tontrennung“, „Kreuzschraffur“ und „Glas“ im Bedienfeld „Filter“ suchen und hinzufügen.",
+    "photoDemo": "Vorführung: ein Logo mit dem „Klonstempel“ entfernen, das Terrarium vor einem salbeigrünen Verlauf freistellen, „Filmkorn“, „Vignette“, „Teiltonung“ und „Klarheit“ hinzufügen und einen Schlagschatten mit maskiertem „Gaußscher Weichzeichner“ weicher machen.",
     "landing": {
       "sections": {
         "sketch": {
@@ -611,7 +616,7 @@ export const additionalDocsUI = {
           "text": "Mobile Geräte werden jeden Tag leistungsfähiger. OLED-Bildschirme scheinen überall zu sein, und mein altes Handy speichert seine Bilder standardmäßig im P3-HDR-Format. SRGB gehört der Vergangenheit an.\n\nBis heute ist Krita die einzige Mal-App, die HDR mit großem Farbumfang richtig unterstützt. HDR ist kompliziert und schwer richtig umzusetzen. Wenn man HDR-Bilder und Bilder mit großem Farbumfang online veröffentlicht, muss man das Gain-Mapping steuern können, damit sie auch auf SDR-Geräten gut aussehen. Natürlich ist kein Fotoeditor ohne sämtliche Grundfunktionen vollständig: Softproof, Effektketten und alles, was dazugehört.\n\nDer Arbeitsbereich Photo ermöglicht beeindruckende Bilder für eine neue Generation von Bildschirmen mit großem Farbumfang.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Tonwertbereich-Werkzeug zur Auswahl nach Helligkeit und den Einstellungsebenen „Kurven“ und „Vibranz“."
+            "alt": "Ein Foto eines kleinen Terrariums im Photo-Arbeitsbereich, mit dem Motiv als Auswahlebene über dem Foto gespeichert."
           },
           "links": [
             {
@@ -683,6 +688,7 @@ export const additionalDocsUI = {
     "imageOpen": "Открыть полноразмерный скриншот",
     "sketchDemo": "Демонстрация размещения плавающих инструментов, перехода к работе без отвлекающих элементов, выбора зелёной кисти и настройки её мягкости.",
     "paintDemo": "Демонстрация смешивания неба инструментами «Живописное смешивание» и «Кристаллическое смешивание», затем поиска и добавления фильтров «Постеризация», «Перекрёстная штриховка» и «Стекло» на панели «Фильтры».",
+    "photoDemo": "Демонстрация: удаление логотипа «Штампом», вырезание террариума на шалфейно-зелёный градиент, добавление фильтров «Плёночное зерно», «Виньетка», «Раздельное тонирование» и «Чёткость» и смягчение тени замаскированным «Размытием по Гауссу».",
     "landing": {
       "sections": {
         "sketch": {
@@ -738,7 +744,7 @@ export const additionalDocsUI = {
           "text": "Мобильные устройства с каждым днём умеют всё больше. Кажется, OLED-экраны уже повсюду, а мой старый телефон по умолчанию сохраняет изображения в формате P3 HDR. SRGB остался в прошлом.\n\nНа сегодняшний день единственное приложение для рисования с полноценной поддержкой широкого цветового охвата и HDR — Krita. HDR сложен, и реализовать его правильно непросто. Когда публикуешь HDR-изображения и изображения с широким цветовым охватом в интернете, нужно управлять картой усиления, чтобы они хорошо выглядели и на SDR-устройствах. Конечно, ни один фоторедактор не будет полноценным без всех базовых возможностей: цветопробы, цепочек эффектов и всего остального.\n\nРабочее пространство Photo позволяет создавать впечатляющие изображения для нового поколения экранов с широким цветовым охватом.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Фотография небольшого террариума в рабочей области Photo с инструментом «Тональный диапазон», готовым к выбору по яркости, а также корректирующими слоями «Кривые» и «Вибрация»."
+            "alt": "Фотография небольшого террариума в рабочей области Photo; объект сохранён как слой выделения над фотографией."
           },
           "links": [
             {
@@ -810,6 +816,7 @@ export const additionalDocsUI = {
     "imageOpen": "เปิดภาพหน้าจอขนาดเต็ม",
     "sketchDemo": "สาธิตการจัดวางเครื่องมือลอย การมุ่งความสนใจที่ผืนผ้าใบ การเลือกพู่กันสีเขียว และการปรับความนุ่มของพู่กัน",
     "paintDemo": "สาธิตการเกลี่ยสีท้องฟ้าด้วยเกลี่ยสีแบบภาพวาดและเกลี่ยสีผลึก จากนั้นค้นหาและเพิ่มลดระดับสี เส้นแรเงาไขว้ และกระจกในแผงฟิลเตอร์",
+    "photoDemo": "สาธิตการลบโลโก้ด้วยตราประทับสำเนา ตัดตู้กระจกวางบนไล่สีเขียวเสจ เพิ่มเกรนฟิล์ม ขอบมืด แยกโทน และความชัดเจน แล้วทำให้เงานุ่มลงด้วยเบลอเกาส์เซียนที่มีมาสก์",
     "landing": {
       "sections": {
         "sketch": {
@@ -865,7 +872,7 @@ export const additionalDocsUI = {
           "text": "อุปกรณ์พกพามีความสามารถมากขึ้นทุกวัน ดูเหมือนหน้าจอ OLED จะอยู่ทุกที่ และโทรศัพท์เครื่องเก่าของฉันก็บันทึกภาพเป็น P3 HDR ตามค่าเริ่มต้น SRGB กลายเป็นเรื่องในอดีตไปแล้ว\n\nจนถึงตอนนี้ แอปวาดภาพเพียงตัวเดียวที่รองรับ HDR และขอบเขตสีกว้างได้อย่างเหมาะสมคือ Krita HDR มีความซับซ้อนและทำให้ถูกต้องได้ยาก เมื่อเผยแพร่ภาพ HDR และภาพขอบเขตสีกว้างทางออนไลน์ คุณต้องควบคุมการแมปเกนเพื่อให้ภาพยังดูดีบนอุปกรณ์ SDR แน่นอนว่าโปรแกรมแต่งภาพจะยังไม่ครบถ้วนหากขาดฟังก์ชันพื้นฐานทั้งหมด ไม่ว่าจะเป็นการปรู๊ฟสี ชุดเอฟเฟกต์ที่ต่อกัน และทุกอย่างที่ควรมี\n\nพื้นที่ทำงาน Photo ช่วยสร้างภาพที่น่าตื่นตาสำหรับหน้าจอขอบเขตสีกว้างรุ่นใหม่",
           "image": {
             "shot": "showcase/photo",
-            "alt": "รูปถ่ายของตู้กระจกขนาดเล็กในพื้นที่ทำงาน Photo พร้อมเครื่องมือช่วงโทนสีที่พร้อมให้เลือกตามความสว่าง และเลเยอร์การปรับเส้นโค้งและความสั่นสะเทือน"
+            "alt": "รูปถ่ายของตู้กระจกขนาดเล็กในพื้นที่ทำงาน Photo โดยบันทึกวัตถุหลักเป็นเลเยอร์พื้นที่เลือกไว้เหนือภาพถ่าย"
           },
           "links": [
             {
@@ -937,6 +944,7 @@ export const additionalDocsUI = {
     "imageOpen": "Mở ảnh chụp màn hình kích thước đầy đủ",
     "sketchDemo": "Minh họa cách sắp xếp công cụ nổi, tập trung vào khung vẽ, chọn cọ xanh lá và điều chỉnh độ mềm của cọ.",
     "paintDemo": "Minh họa cách hòa màu bầu trời bằng Hòa màu kiểu tranh và Hòa màu tinh thể, rồi tìm và thêm Giảm mức màu, Gạch chéo và Kính trong bảng Bộ lọc.",
+    "photoDemo": "Minh họa cách xóa logo bằng Dấu sao chép, tách hồ cạn đặt lên dải chuyển màu xanh xô thơm, thêm Hạt phim, Tối góc, Tách sắc độ và Độ rõ nét, rồi làm mềm bóng đổ bằng Làm mờ Gaussian có mặt nạ.",
     "landing": {
       "sections": {
         "sketch": {
@@ -992,7 +1000,7 @@ export const additionalDocsUI = {
           "text": "Thiết bị di động ngày càng làm được nhiều việc hơn. Dường như màn hình OLED đã có mặt ở khắp nơi, và chiếc điện thoại cũ của tôi mặc định lưu ảnh ở định dạng P3 HDR. SRGB đã là chuyện của quá khứ.\n\nĐến nay, ứng dụng vẽ duy nhất hỗ trợ tốt HDR với gam màu rộng là Krita. HDR phức tạp và khó làm cho đúng. Khi đăng ảnh HDR và ảnh gam màu rộng lên mạng, bạn cần kiểm soát ánh xạ độ khuếch đại để ảnh vẫn đẹp trên thiết bị SDR. Tất nhiên, không trình chỉnh sửa ảnh nào hoàn chỉnh nếu thiếu toàn bộ chức năng cơ bản: xem thử màu in, chuỗi hiệu ứng và tất cả những thứ cần có.\n\nKhông gian làm việc Photo cho phép tạo hình ảnh ấn tượng cho thế hệ màn hình gam màu rộng mới.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Ảnh chụp một hồ cạn nhỏ trong không gian làm việc Photo, với công cụ Phạm vi tông màu sẵn sàng để chọn theo độ sáng cũng như các lớp điều chỉnh Đường cong và Độ rung."
+            "alt": "Ảnh chụp một hồ cạn nhỏ trong không gian làm việc Photo, với chủ thể được lưu thành lớp vùng chọn phía trên ảnh."
           },
           "links": [
             {
@@ -1064,6 +1072,7 @@ export const additionalDocsUI = {
     "imageOpen": "Tam boyutlu ekran görüntüsünü aç",
     "sketchDemo": "Yüzen araçları yerleştirme, tuvale odaklanma, yeşil bir fırça seçme ve yumuşaklığını ayarlama gösterimi.",
     "paintDemo": "Gökyüzünü Ressamca karıştırıcı ve Kristal karıştırıcı ile karıştırma, ardından Filtreler panelinde Posterleştirme, Çapraz tarama ve Cam filtrelerini bulup ekleme gösterimi.",
+    "photoDemo": "Klonlama damgası ile logoyu silme, teraryumu adaçayı yeşili bir degradenin üzerine kesip yerleştirme, Film grenleri, Vinyet, Bölünmüş tonlama ve Netlik ekleme ve maskeli Gauss bulanıklığı ile gölgeyi yumuşatma gösterimi.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1119,7 +1128,7 @@ export const additionalDocsUI = {
           "text": "Mobil cihazlar her gün daha fazla şey yapabiliyor. OLED ekranlar her yerde gibi görünüyor ve eski telefonum bile görüntülerini varsayılan olarak P3 HDR biçiminde kaydediyor. SRGB geçmişte kaldı.\n\nBugüne kadar geniş renk gamutlu HDR'ı düzgün destekleyen tek boyama uygulaması Krita. HDR karmaşık ve doğru uygulanması zor. HDR ve geniş gamutlu görüntüleri internette yayımlarken SDR cihazlarda da iyi görünmeleri için kazanç eşlemesini kontrol etmeniz gerekiyor. Elbette renk provası, efekt zincirleri ve diğer tüm temel işlevler olmadan hiçbir fotoğraf düzenleyici tamamlanmış sayılmaz.\n\nPhoto çalışma alanı, yeni nesil geniş gamutlu ekranlar için çarpıcı görseller oluşturmayı mümkün kılar.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Photo çalışma alanındaki küçük bir teraryumun, parlaklığa göre seçime hazır Ton aralığı aracı ve Eğriler ve Titreşim ayarlama katmanları ile çekilmiş fotoğrafı."
+            "alt": "Photo çalışma alanında küçük bir teraryumun fotoğrafı; konu, fotoğrafın üstünde seçim katmanı olarak kaydedilmiş."
           },
           "links": [
             {
@@ -1191,6 +1200,7 @@ export const additionalDocsUI = {
     "imageOpen": "Apri lo screenshot a dimensione intera",
     "sketchDemo": "Dimostrazione di come disporre gli strumenti mobili, concentrarsi sulla tela, scegliere un pennello verde e regolarne la morbidezza.",
     "paintDemo": "Dimostrazione di come sfumare il cielo con Sfumino pittorico e Sfumino cristallino, poi cercare e aggiungere Posterizza, Tratteggio incrociato e Vetro dal pannello Filtri.",
+    "photoDemo": "Dimostrazione di come cancellare un logo con il Timbro clone, scontornare il terrario su una sfumatura verde salvia, aggiungere Grana della pellicola, Vignettatura, Viraggio diviso e Chiarezza e ammorbidire un'ombra con una Sfocatura gaussiana mascherata.",
     "landing": {
       "sections": {
         "sketch": {
@@ -1246,7 +1256,7 @@ export const additionalDocsUI = {
           "text": "I dispositivi mobili sono ogni giorno più capaci. Sembra che gli schermi OLED siano ovunque e il mio vecchio telefono salva le immagini in formato P3 HDR per impostazione predefinita. SRGB appartiene al passato.\n\nA oggi, l’unica app di pittura che supporta correttamente l’HDR ad ampia gamma cromatica è Krita. L’HDR è complicato e difficile da realizzare bene. Quando pubblichi online immagini HDR e ad ampia gamma cromatica, devi controllare la mappatura del guadagno perché siano belle anche sui dispositivi SDR. Naturalmente, nessun editor fotografico è completo senza tutte le funzioni di base: prove colore, catene di effetti e tutto il resto.\n\nL’area di lavoro Photo permette di creare immagini sorprendenti per una nuova generazione di schermi ad ampia gamma cromatica.",
           "image": {
             "shot": "showcase/photo",
-            "alt": "Una fotografia di un piccolo terrario nell'area di lavoro Photo, con lo strumento Gamma tonale pronto per la selezione in base alla luminosità e ai livelli di regolazione Curve e Vividezza."
+            "alt": "Una fotografia di un piccolo terrario nell'area di lavoro Photo, con il soggetto salvato come livello di selezione sopra la foto."
           },
           "links": [
             {

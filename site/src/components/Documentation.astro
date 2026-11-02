@@ -18,7 +18,7 @@ const topics = Object.entries(overview.sections).map(([id, copy]) => ({ id, copy
   <p class="docs-lead">{t.intro}</p>
   <div class="docs-concepts docs-stories">
     {topics.map(({ id, copy, paragraphs }) => <section aria-labelledby={id}>
-      {id === 'sketch' || id === 'paint' ? <WorkspaceDemo locale={locale} id={id} /> : <GuideFigure locale={locale} image={{ ...capturePair(copy.image.shot, locale), alt: copy.image.alt }} />}
+      {id === 'sketch' || id === 'paint' || id === 'photo' ? <WorkspaceDemo locale={locale} id={id} /> : <GuideFigure locale={locale} image={{ ...capturePair(copy.image.shot, locale), alt: copy.image.alt }} />}
       <h2 id={id}>{copy.title}</h2>
       <div class="docs-story-text">
         {paragraphs.slice(0, -1).map((paragraph: string) => <p>{paragraph}</p>)}

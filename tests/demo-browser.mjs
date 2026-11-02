@@ -9,7 +9,7 @@ export async function checkWorkspaceDemos(b, host, check) {
     { name: 'prefers-reduced-motion', value: motion },
   ] });
   await b.call('Emulation.setDeviceMetricsOverride', { width: 1440, height: 900, deviceScaleFactor: 1, mobile: false });
-  for (const [id, seconds] of [['sketch', [24, 28]], ['paint', [30, 36]]]) {
+  for (const [id, seconds] of [['sketch', [24, 28]], ['paint', [30, 36]], ['photo', [72, 90]]]) {
     const figure = `document.querySelector('[data-workspace-demo="${id}"]')`, video = `${figure}.querySelector('video')`;
     for (const locale of Object.keys(languages)) for (const theme of ['light', 'dark']) {
       await emulate(theme);
@@ -34,7 +34,7 @@ export async function checkWorkspaceDemos(b, host, check) {
     await b.until(`!${video}.seeking && ${video}.currentTime>${video}.duration-.5`);
     await b.until(`${video}.currentTime<.5&&!${video}.paused`);
     check(true, `${id} video reaches its end and restarts the loop`);
-    await b.evaluate(`scrollBy(0, ${figure}.getBoundingClientRect().bottom + 10)`);
+    await b.evaluate(`(() => { const box = ${figure}.getBoundingClientRect(), below = document.documentElement.scrollHeight - scrollY - innerHeight; scrollBy(0, below > box.bottom + 10 ? box.bottom + 10 : box.top - innerHeight - 10); })()`);
     await b.until(`${video}.paused`);
     check(true, `Offscreen ${id} demo stops playing`);
     await b.evaluate(`${figure}.scrollIntoView({block:'center'})`);

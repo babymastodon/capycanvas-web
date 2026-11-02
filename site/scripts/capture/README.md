@@ -43,7 +43,8 @@ Dither Blender, Marbling, Liquify Edge, and Liquify Reconstruct. These images
 show the original paint at the left and the result at the right.
 `showcase.mjs` stages the homepage slides from the scenes in
 `showcase-scenes.mjs`, which the [software center screenshots](../store/README.md)
-share.
+share. The website's Photo slide instead runs the Photo demo's own setup, so the
+still matches the first frame of its video.
 
 - `editor.mjs` drives the editor through its own actions, commands, clicks and
   pen events. The browser file picker is replaced with an in-memory store so
@@ -146,9 +147,9 @@ Reproduction means the same source, actions, artwork and composition. GPU, fonts
 Chrome versions and input timing can change individual bytes, so review new
 images rather than expecting identical output.
 
-## Sketch and Paint demonstrations
+## Sketch, Paint and Photo demonstrations
 
-The documentation overview's Sketch and Paint loops are real 1920 × 1080 editor
+The documentation overview's Sketch, Paint and Photo loops are real 1920 × 1080 editor
 recordings at 24 fps, with a filled circular pointer over trusted browser input.
 
 Sketch: `demo/motion.mjs` defines the paths, timing and short reading pauses in
@@ -168,30 +169,48 @@ it, and swipes Posterize away in Layers. Controls use mouse input, the Tool Set
 scroll and layer swipe use touch (rows only swipe for direct contact), and
 strokes use pen input. Filters without animation keep the loop small.
 
+Photo: `capture-photo-demo.mjs` opens `showcase/NDF_4717.jpg` and, before
+recording, saves the terrarium as a Subject selection layer from a tonal range
+plus the polygons in `demo/photo-journey.mjs` and `demo/photo-outline.json`.
+`photo-journey.mjs` then holds Alt to set the Clone Stamp source and paints one
+stroke over the logo, masks the photo with Subject, picks two sage colors on the
+wheel for a radial Gradient on a new layer, shrinks the photo with Transform, adds
+Film Grain (45 %, 5 px, not animated), Vignette, Split Tone and Clarity, and builds
+the shadow: a skewed Pine Shadow fill set to Multiply at 42 %, a feathered contact
+ellipse, and two Gaussian Blur filters added from the selection bar's Adjust menu
+over feathered rectangles, so the shadow stays crisp at the base. Sliders are
+dragged, never typed. It ends on the Move tool and holds 3 seconds. Record it with
+an app revision whose Film Grain inserts without animation and whose Gaussian Blur
+starts at 20 px (capycanvas dda0ac1ea or later). `DEMO_THROUGH=color-matched` stops
+3 seconds after Clarity without the closing dissolve, for the app README's
+animated WebP; its results go to `artifacts/photo-demos/<locale>-<theme>-through-color-matched/`.
+
 Install FFmpeg with VP9 support as well as the capture requirements above.
 Capture each site locale and both themes, then review and publish the complete set:
 
 ```sh
 DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo
 DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo:paint
+DEMO_LOCALE=ja DEMO_THEME=dark npm run capture:demo:photo
 npm run capture:demo:publish
 npm run check
 ```
 
 `DEMO_LOCALE` defaults to `en` and `DEMO_THEME` to `light`. Results go to
-`artifacts/sketch-demos/<locale>-<theme>/` and `artifacts/paint-demos/<locale>-<theme>/`;
+`artifacts/sketch-demos/<locale>-<theme>/`, `artifacts/paint-demos/<locale>-<theme>/` and
+`artifacts/photo-demos/<locale>-<theme>/`;
 `DEMO_OUTPUT` selects another path. Raw PNG frames are removed after encoding
-unless `DEMO_KEEP_FRAMES=1`. Sketch uses VP9 quality 24 and Paint quality 30 with
-a 1.4 Mbit/s cap, both with a long keyframe interval to keep static artwork
+unless `DEMO_KEEP_FRAMES=1`. Sketch uses VP9 quality 24, Paint and Photo quality 30
+with a 1.4 Mbit/s cap, all with a long keyframe interval to keep static artwork
 small and a short dissolve back to the original hero at the loop end.
-The publisher requires every locale/theme pair of both demos, checks the codec,
+The publisher requires every locale/theme pair of every demo, checks the codec,
 absence of audio, dimensions, frame rate, duration and size with FFprobe, then
 writes `public/assets/demos/` and its source/hash manifest. The manifest also
-records where each homepage clip ends: after the pink sky in Paint and after leaf
-green in Sketch. The homepage plays those openings from the same files, so a
+records where each homepage clip ends: after the pink sky in Paint, after leaf
+green in Sketch and after Clarity in Photo. The homepage plays those openings from the same files, so a
 reader who opens both pages downloads each video once.
-`SKETCH_DEMO_DIRECTORY` and `PAINT_DEMO_DIRECTORY` select other capture sets, so
-one demo can be republished with the other's approved captures. Keep homepage
+`SKETCH_DEMO_DIRECTORY`, `PAINT_DEMO_DIRECTORY` and `PHOTO_DEMO_DIRECTORY` select
+other capture sets, so one demo can be republished with the others' approved captures. Keep homepage
 and store stills free of tool bubbles.
 
 ## Release visual

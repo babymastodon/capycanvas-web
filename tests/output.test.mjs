@@ -81,9 +81,9 @@ for(const locale of Object.keys(languages)) {
         assert.match(html, /<source media="\(prefers-color-scheme: dark\)" srcset="[^"]+ 480w, [^"]+ 960w, [^"]+ 1440w, [^"]+ 1920w" sizes="/);
         assert.ok(html.includes(`<img src="/assets/${light}" width="1920" height="1080" alt="${escape(content[locale].home.slides[slide])}"`), `Slide ${slide} has its localized description`);
         assert.match(html,new RegExp(`<input class="visually-hidden" type="radio" name="workspace" value="${slide}"`));
-        assert.equal(html.includes(`data-light="/assets/demos/${locale}/${slide}-light.webm"`)&&html.includes(`data-dark="/assets/demos/${locale}/${slide}-dark.webm"`),slide!=='photo',`Slide ${slide} ${slide==='photo'?'stays a still image':'plays its documentation demo'} in the page language`);
+        assert.ok(html.includes(`data-light="/assets/demos/${locale}/${slide}-light.webm"`)&&html.includes(`data-dark="/assets/demos/${locale}/${slide}-dark.webm"`),`Slide ${slide} plays its documentation demo in the page language`);
       }
-      assert.equal((html.match(/<video width="1920" height="1080" muted playsinline preload="none" aria-hidden="true"/g)||[]).length,2,'Hero videos load only when played and stay silent');
+      assert.equal((html.match(/<video width="1920" height="1080" muted playsinline preload="none" aria-hidden="true"/g)||[]).length,3,'Hero videos load only when played and stay silent');
       assert.equal((html.match(/type="radio"[^>]*checked/g)||[]).length,1,'One workspace is chosen without JavaScript');
       assert.match(html,/value="paint" checked/);
       assert.ok(html.includes(`<legend class="visually-hidden">${content[locale].home.workspaces}</legend>`));

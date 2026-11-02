@@ -41,6 +41,14 @@
         "app.js": "f77d6e6f4dcdfaf5c75f43ba51fcde6f5fbba4531dd7e55ed7211a79d0ac545e",
         "pkg/layer_web_bg.wasm": "6ecef3a69dc06278a0b8f45cc513310a2496af38a2e1d941673da7cd43fe33fb"
       }
+    },
+    "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "21c25d930a9470ec001de2b0b39017498c17c372fe5a2e30112bd720713b3147",
+        "pkg/layer_web_bg.wasm": "2218c5bae1eb195bb7f3d90a6b91f8ee748278c8e8cd20d896ec8a87cc9d2646"
+      }
     }
   },
   "demos": {
@@ -672,6 +680,322 @@
           "bytes": 2396523,
           "sha256": "43dbf446f6151e8705381819ddf90105f860794622cb292396a085c3901f9e57",
           "revision": "d7425d800af8d8780bf11923a5ed48d5be9b1126"
+        }
+      ]
+    },
+    "photo": {
+      "recipeHashes": {
+        "capture-photo-demo.mjs": "60e5e25c826c94a2e28f30cb5cb90315ee2ce0d690b07d9a2fdd8ae08de2d8ca",
+        "capture/demo/photo-journey.mjs": "05cdca7d6bd8b135ffb39a19f7ac7dcb29d4440be6ec360bb2b7baa29b836d23",
+        "capture/demo/photo-outline.json": "87f2c69703db3c4ed7922e942d14bfe0c3d2b8468ed7ee4287b51dc36eac4bd7",
+        "capture/demo/motion.mjs": "6c5ff9624efcee84beec721b7233fea769db1ddec45011ddac6af721dff3d56a",
+        "capture/demo/pointer.mjs": "a4e1d8abd2e994aebe71ff79fe0d0908ccd8f28407da136ca3e26cc1a0a8e081",
+        "browser.mjs": "c48fb1a448c4310f888eb8e76cc03764d143b91984de2dbee9c2ef1d01396602",
+        "serve.mjs": "8b0bb3577fd421ed6147b66b67326e022f06787be73b7f612f8ffa60cb86eac3",
+        "capture/editor.mjs": "274e8f8b9638b4c06a24d6aa0c69d9113d978fd992ef735bd6359664f40642d7",
+        "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
+        "capture/shoot.mjs": "e215ca37e528a73a5a829369797098efa068d83a10edaad2989a3437fcd82ad5"
+      },
+      "videos": [
+        {
+          "file": "en/photo-light.webm",
+          "locale": "en",
+          "theme": "light",
+          "duration": 77.084,
+          "hero": 38.27,
+          "bytes": 4539099,
+          "sha256": "a0103ebebc48bd258b7879addd8fd960eb12558af9bc367c648ad7f2d1d5503e",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "en/photo-dark.webm",
+          "locale": "en",
+          "theme": "dark",
+          "duration": 76.875,
+          "hero": 38.58,
+          "bytes": 5379417,
+          "sha256": "8f7c7005d71338917bcf57cffe11d10f94935b621731688b478ac9407c00ae89",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ja/photo-light.webm",
+          "locale": "ja",
+          "theme": "light",
+          "duration": 83.792,
+          "hero": 38.79,
+          "bytes": 4779650,
+          "sha256": "3b1e4238c52d2a45f0e944a0b8680d8b7a80f08c463f896b8a0c91c6782105a1",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ja/photo-dark.webm",
+          "locale": "ja",
+          "theme": "dark",
+          "duration": 84.667,
+          "hero": 40.51,
+          "bytes": 5533238,
+          "sha256": "3a9f465cbaf6ccf3fa289b791ac33851deed6264d44b2f65865a15cdb1209e01",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "zh/photo-light.webm",
+          "locale": "zh",
+          "theme": "light",
+          "duration": 81.834,
+          "hero": 38.07,
+          "bytes": 4712342,
+          "sha256": "3d6c963d330f82d3d8e592d55e069e72664e5f7f269ed3a8043df24a0a574787",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "zh/photo-dark.webm",
+          "locale": "zh",
+          "theme": "dark",
+          "duration": 79.709,
+          "hero": 38.09,
+          "bytes": 5287802,
+          "sha256": "1d7c7865cdb26010b3484fc1dfc4e593338329dbfad393ec7494c1b62314424e",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "zh-Hant/photo-light.webm",
+          "locale": "zh-Hant",
+          "theme": "light",
+          "duration": 81.667,
+          "hero": 37.53,
+          "bytes": 4627492,
+          "sha256": "c159dc74ee658fc1c7e0206a39b1f14fa6e3f862be5d8f36997762829c480838",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "zh-Hant/photo-dark.webm",
+          "locale": "zh-Hant",
+          "theme": "dark",
+          "duration": 83.042,
+          "hero": 37.48,
+          "bytes": 5123298,
+          "sha256": "0cd6ef40fd56891297ab1fc6e201707413e2abc1df9d861281cb186a99c8791a",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ko/photo-light.webm",
+          "locale": "ko",
+          "theme": "light",
+          "duration": 79.25,
+          "hero": 37.42,
+          "bytes": 4552138,
+          "sha256": "1073b0882127ae3f4c46c95664c32d37e374082326e72dba728a0531c3e5cd7c",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ko/photo-dark.webm",
+          "locale": "ko",
+          "theme": "dark",
+          "duration": 82.292,
+          "hero": 39.47,
+          "bytes": 5242707,
+          "sha256": "dfb688849f7a370d6ac82ca5c693303a20ac84ab839ba02660a36603d5a90938",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "es/photo-light.webm",
+          "locale": "es",
+          "theme": "light",
+          "duration": 84,
+          "hero": 37.53,
+          "bytes": 4858199,
+          "sha256": "3c4e7005322d46bb21aba46336754c2b6c4c5032ed556ecde8d810d5ed93d492",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "es/photo-dark.webm",
+          "locale": "es",
+          "theme": "dark",
+          "duration": 78.792,
+          "hero": 37.64,
+          "bytes": 5474570,
+          "sha256": "8cda5e34b93ae4d1b0c53ae1fb41f91d3abbb1bf809e6eb16ad1f2b57bddc8ae",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "pt-BR/photo-light.webm",
+          "locale": "pt-BR",
+          "theme": "light",
+          "duration": 80.084,
+          "hero": 37.13,
+          "bytes": 4824216,
+          "sha256": "93e6e8d3cd01400a17fef9cb2685d1300cbc22280d844dc7dfd4593de93a6e12",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "pt-BR/photo-dark.webm",
+          "locale": "pt-BR",
+          "theme": "dark",
+          "duration": 79.834,
+          "hero": 37.21,
+          "bytes": 5694549,
+          "sha256": "371e0e3258d6b775c970df27c7a5bf45566a95e0d8234f0ba5ee35934745f9b4",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "id/photo-light.webm",
+          "locale": "id",
+          "theme": "light",
+          "duration": 77.875,
+          "hero": 38.22,
+          "bytes": 4850118,
+          "sha256": "bc142c7950ac81420555c6a4b945f644e30f76c6d3a416be3cbcea69195c033a",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "id/photo-dark.webm",
+          "locale": "id",
+          "theme": "dark",
+          "duration": 77.917,
+          "hero": 38.33,
+          "bytes": 5287095,
+          "sha256": "aa64bbac9ec0f326ae04d1cd287cd16500c6608f5f702e14c6b8b4564f80c177",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "fr/photo-light.webm",
+          "locale": "fr",
+          "theme": "light",
+          "duration": 78.542,
+          "hero": 39.27,
+          "bytes": 5086332,
+          "sha256": "5abbd8d2f5ed6431c860531019cfe6b2e25fc80b386e84456ee24d41156ec9df",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "fr/photo-dark.webm",
+          "locale": "fr",
+          "theme": "dark",
+          "duration": 76.959,
+          "hero": 37.81,
+          "bytes": 5760265,
+          "sha256": "f27fbde7f0a5ecfd49e7e80cb1bfc0ecb43f3a36f5e48e7ecc6e92e0ea9856d0",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "de/photo-light.webm",
+          "locale": "de",
+          "theme": "light",
+          "duration": 77.292,
+          "hero": 37.78,
+          "bytes": 5039564,
+          "sha256": "fc53df069ac4a7306a54fa12cbf227afa93e336420ebe3f4d1fbc84b02f20197",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "de/photo-dark.webm",
+          "locale": "de",
+          "theme": "dark",
+          "duration": 76.834,
+          "hero": 37.77,
+          "bytes": 5431768,
+          "sha256": "875cc5782bf71651eb55bbb257a5519b0f1e8b6afd5714148e271d72a562e649",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ru/photo-light.webm",
+          "locale": "ru",
+          "theme": "light",
+          "duration": 76.042,
+          "hero": 37.72,
+          "bytes": 4967474,
+          "sha256": "cbc998281a23797ec4ae462eb77aa435beaf419c55ff8abfb6d77d4f8bb6ce3c",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "ru/photo-dark.webm",
+          "locale": "ru",
+          "theme": "dark",
+          "duration": 76.584,
+          "hero": 37.48,
+          "bytes": 5494875,
+          "sha256": "8e740aeaa7c1da3e1fa78f831c9c98232aecf81c998a96188fa3db31271b1dd4",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "th/photo-light.webm",
+          "locale": "th",
+          "theme": "light",
+          "duration": 76.292,
+          "hero": 37.82,
+          "bytes": 4694653,
+          "sha256": "fe72a76a64560be15d604403a9e1ceec1cde06bb0049d6c8e00b4bd91fc4f09c",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "th/photo-dark.webm",
+          "locale": "th",
+          "theme": "dark",
+          "duration": 77.667,
+          "hero": 37.87,
+          "bytes": 5094017,
+          "sha256": "3ee51f3d725bf6d6728274ba43137b1efcfe5bf88d80c852707930e0f8f127d3",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "vi/photo-light.webm",
+          "locale": "vi",
+          "theme": "light",
+          "duration": 77.5,
+          "hero": 38.46,
+          "bytes": 4698928,
+          "sha256": "77e45a52ae0a562e22716d99388ff8a8707e97902ae62172d61a4b58b2358c1f",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "vi/photo-dark.webm",
+          "locale": "vi",
+          "theme": "dark",
+          "duration": 77.917,
+          "hero": 38.48,
+          "bytes": 5105799,
+          "sha256": "d4a0303c169fc35df7400258b9c9674a5be923b963186c406551aeaac6c4a802",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "tr/photo-light.webm",
+          "locale": "tr",
+          "theme": "light",
+          "duration": 75.5,
+          "hero": 37.07,
+          "bytes": 4738336,
+          "sha256": "812a9968d879b5ef2416656ae8abb046c834d302b400583ef09cbbe7d20549bf",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "tr/photo-dark.webm",
+          "locale": "tr",
+          "theme": "dark",
+          "duration": 75.417,
+          "hero": 36.76,
+          "bytes": 5106187,
+          "sha256": "f58eaca8ee821d8289de747f61550ede914eae71354afa2a18bcf80cb0190bfd",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "it/photo-light.webm",
+          "locale": "it",
+          "theme": "light",
+          "duration": 77.042,
+          "hero": 37.5,
+          "bytes": 4595290,
+          "sha256": "7d85c9573bf89dd9a71a1da1a6834cb9b7ee184ba30e5e235ca9621a2b0a8c40",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
+        },
+        {
+          "file": "it/photo-dark.webm",
+          "locale": "it",
+          "theme": "dark",
+          "duration": 76.5,
+          "hero": 37.12,
+          "bytes": 5431665,
+          "sha256": "94c007fef3d89bc6c6ba867ff9cbd618f9c56e62b4db665db6f4ac3028c75f5f",
+          "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c"
         }
       ]
     }

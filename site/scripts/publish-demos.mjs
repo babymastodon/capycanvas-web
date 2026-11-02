@@ -31,6 +31,14 @@ const demos = {
       assert.equal(layers('posterize-deleted').length, layers('layers-panel').length - 1, 'One filter layer is deleted');
     },
   },
+  photo: {
+    seconds: [72, 90], bytes: 6500000, hero: ['color-matched', .3],
+    recipes: ['capture-photo-demo.mjs', 'capture/demo/photo-journey.mjs', 'capture/demo/photo-outline.json', 'capture/demo/motion.mjs', ...shared],
+    check: capture => {
+      assert.deepEqual(capture.stages.map(stage => stage.name), ['original-hero', 'logo-healed', 'subject-selected', 'cut-out', 'sage-backdrop', 'subject-placed', 'poster-look', 'color-matched', 'shadow', 'final']);
+      assert.equal(capture.look.shadowBlur, 20);
+    },
+  },
 };
 const sources = {}, published = {};
 for (const [id, demo] of Object.entries(demos)) {
@@ -54,7 +62,8 @@ for (const [id, demo] of Object.entries(demos)) {
     assert.ok(duration >= demo.seconds[0] && duration < demo.seconds[1], `${id} demo length: ${source}`);
     assert.ok(bytes.length < demo.bytes, `Small download: ${source}`);
     const [stage, hold] = demo.hero;
-    const hero = Number((capture.stages.find(entry => entry.name === stage).at - capture.firstFrameAt + hold).toFixed(2));
+    const reached = capture.stages.find(entry => entry.name === stage);
+    const hero = Number(((reached.video ?? reached.at - capture.firstFrameAt) + hold).toFixed(2));
     assert.ok(hero > 10 && hero < duration, `${id} homepage clip ends inside the video: ${source}`);
     planned.push({ source, file: `${locale}/${id}-${theme}.webm`, locale, theme, duration, hero,
       bytes: bytes.length, sha256: hash(bytes), revision });

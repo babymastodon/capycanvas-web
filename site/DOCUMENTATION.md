@@ -42,11 +42,14 @@ its former path to `docRedirects`; the build writes a redirect page for it under
 
 The overview (`components/Documentation.astro`, copy in `src/data/docs-ui.mjs`)
 uses the author's Sketch, Paint and Photo stories in every language. Each
-section opens with its workspace image, followed by the title and story. Sketch
-and Paint use silent, automatic WebM loops with no visible controls. Sketch shows
+section opens with its workspace image, followed by the title and story. Sketch,
+Paint and Photo use silent, automatic WebM loops with no visible controls. Sketch shows
 how to place the tool bubbles, enter Zen mode, choose a green Blotty Ink brush and
 adjust its hardness. Paint blends the sky with Painterly Blender and Crystal
-Blender, then adds Posterize, Crosshatch and Glass from the Filters panel. Each
+Blender, then adds Posterize, Crosshatch and Glass from the Filters panel. Photo
+hides a logo with the Clone Stamp, cuts the terrarium out onto a sage gradient, adds
+Film Grain, Vignette, Split Tone and Clarity, then softens a cast shadow with masked
+Gaussian Blur. Each
 video uses the page's language and appearance. It loads when the image comes into
 view and pauses offscreen or in a hidden tab. Reduced motion, disabled JavaScript
 and playback errors keep the clean workspace still.

@@ -26,8 +26,10 @@
     "browser.mjs": "c48fb1a448c4310f888eb8e76cc03764d143b91984de2dbee9c2ef1d01396602",
     "capture-compatibility.mjs": "c1265671aa317d01a1d8a6e4d6af0e66cd0ab9c5d74aee1c55c89d20aa796ce1",
     "capture-headless.sh": "e755bc8cacb8d76f270e06bf6252b6c535ce4d9d62e1dc41e805890875cf5bb9",
-    "capture.mjs": "bd1dd1b13b5734fd64d92c3621a82d12d7c2b5565b2c55ba572949e8c1a5398b",
+    "capture.mjs": "e9ac85c5821aac85fcf84030b2588fbe08a49182da9254684dd14517779d8061",
     "capture/annotations.mjs": "519395e133f8d671a2afe47813819f61e27638459dde744a2418f2a03f321e5e",
+    "capture/demo/photo-journey.mjs": "05cdca7d6bd8b135ffb39a19f7ac7dcb29d4440be6ec360bb2b7baa29b836d23",
+    "capture/demo/photo-outline.json": "87f2c69703db3c4ed7922e942d14bfe0c3d2b8468ed7ee4287b51dc36eac4bd7",
     "capture/docs/brushes.mjs": "9199335583f9629869d24375a61031a55d13fc8c28abad076beedea1e13eb047",
     "capture/docs/bubbles.mjs": "cbabbba5898fe94b35f1b6bb650f168ead827718933bebdcd0ed5d9fc7bfee35",
     "capture/docs/color-management.mjs": "b7ecf54559372a220eba76d5799aa70e82c572773b9eeb40cd30eefe7f782dce",
@@ -52,7 +54,7 @@
     "capture/languages.mjs": "cd9dcbf4da7f54ce67be95a2e7ee80989625f6e8b2acd07724ac09a5ee7969b4",
     "capture/shoot.mjs": "e215ca37e528a73a5a829369797098efa068d83a10edaad2989a3437fcd82ad5",
     "capture/showcase-scenes.mjs": "2ab43bb35dc3869921ae4ce0e15219134d394d2ce4cf491c2a2d6bc520788484",
-    "capture/showcase.mjs": "e3c6415162368e10aaed4be712fd62337a094bf514c35705272a29f0f7c5b625",
+    "capture/showcase.mjs": "3f43c245ed6f305ad8fe0f319beecc382465cce53b261033fab3701cb9d3051f",
     "prepare-capture.mjs": "13a7b9db0561c429376d2edf4b241a1552c644dbe3e1a3761843c94a697f18d6",
     "serve.mjs": "8b0bb3577fd421ed6147b66b67326e022f06787be73b7f612f8ffa60cb86eac3"
   },
@@ -120612,7 +120614,7 @@
     },
     {
       "file": "showcase/de/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -120623,13 +120625,13 @@
         1920,
         1080
       ],
-      "bytes": 984134,
-      "sha256": "16d91fd9d269e8eb061bf66a43e1e554b391d165cecba5ca2e216e38a1b508d3",
+      "bytes": 833420,
+      "sha256": "a47f43c68d069613b1a50ee57f532faa4e5175d9328d876e4dfd0c2b1eb16419",
       "annotations": []
     },
     {
       "file": "showcase/de/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -120640,8 +120642,8 @@
         1920,
         1080
       ],
-      "bytes": 987626,
-      "sha256": "7e45a4a8be19486c36355dd1b45d922d4d1cfeade39577fe6d538c3eca7cecef",
+      "bytes": 838684,
+      "sha256": "319f922d9f1d5044f627d891541db3a774514ea7efc67ab264241a53c4b79fe8",
       "annotations": []
     },
     {
@@ -120714,7 +120716,7 @@
     },
     {
       "file": "showcase/en/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -120725,13 +120727,13 @@
         1920,
         1080
       ],
-      "bytes": 976754,
-      "sha256": "12e00c64b89ac76d5f70a647e3a7492a1693b587c2452ec57a14dcda8c42ade4",
+      "bytes": 826212,
+      "sha256": "990ab89a322dafdc75dd612885401755c005657f0a01282813b74e02580cbbe7",
       "annotations": []
     },
     {
       "file": "showcase/en/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -120742,8 +120744,8 @@
         1920,
         1080
       ],
-      "bytes": 981802,
-      "sha256": "9535a2483b7a373015e5637e1669342b9032346ec66041aae4db62933846cbdf",
+      "bytes": 831916,
+      "sha256": "f98770ae8a97740d95ce02b759c6daf984b85941b97258cbf423eefaefce3569",
       "annotations": []
     },
     {
@@ -120816,7 +120818,7 @@
     },
     {
       "file": "showcase/es/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -120827,13 +120829,13 @@
         1920,
         1080
       ],
-      "bytes": 986226,
-      "sha256": "04b4c0e1ca2018a6c56df8ee76ba634699a2f84f1b76d7b2cd3bdff91d344dd7",
+      "bytes": 834122,
+      "sha256": "c3cc5bb0939be9672b3d6fc8971a1b088507d204585a94d2e41b362e3590fd1e",
       "annotations": []
     },
     {
       "file": "showcase/es/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -120844,8 +120846,8 @@
         1920,
         1080
       ],
-      "bytes": 993146,
-      "sha256": "456c3c66ab50f247136aec002e7da60465d44479386e5d4ab2c1d0bfd16b6b57",
+      "bytes": 840092,
+      "sha256": "cf1d909a019a37007a3ee00adc6c6b71353ed2c09b57cec7e78d272e31e80dc9",
       "annotations": []
     },
     {
@@ -120918,7 +120920,7 @@
     },
     {
       "file": "showcase/fr/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -120929,13 +120931,13 @@
         1920,
         1080
       ],
-      "bytes": 985806,
-      "sha256": "75838f9f123170de6d2ecca02727d0c1b936ffd4bcb69427467ba579b4fa85e6",
+      "bytes": 833320,
+      "sha256": "39141cf79482c19baa565a4289d1b651ab513fe12a1f6f588dadd4d351fda87a",
       "annotations": []
     },
     {
       "file": "showcase/fr/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -120946,8 +120948,8 @@
         1920,
         1080
       ],
-      "bytes": 991888,
-      "sha256": "52bb9f35636b0830910957c232ec8a550c3c96a5c1529601ddb74151891976a9",
+      "bytes": 838252,
+      "sha256": "a4ac49a14f8286b1cdf0c62240b94338732eb594a925d9ba1589929ac6f81c45",
       "annotations": []
     },
     {
@@ -121020,7 +121022,7 @@
     },
     {
       "file": "showcase/id/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121031,13 +121033,13 @@
         1920,
         1080
       ],
-      "bytes": 977706,
-      "sha256": "a0d8c6b4af61621617732d294bb2f354723db8be376189489e08c84e5a323711",
+      "bytes": 831616,
+      "sha256": "42fbcb217ac921353e1a8ba3ff059c84694453610d201c947233fef338604235",
       "annotations": []
     },
     {
       "file": "showcase/id/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121048,8 +121050,8 @@
         1920,
         1080
       ],
-      "bytes": 987650,
-      "sha256": "35eff8bb4bd6c37223cbc6de5a1e88a459918f6a5a6485cbce6ab8fdbb8e12d3",
+      "bytes": 834630,
+      "sha256": "ed83110cda1929e95237c1b200f3712200d7d94fc8a4dba4daa13d2131ab7411",
       "annotations": []
     },
     {
@@ -121122,7 +121124,7 @@
     },
     {
       "file": "showcase/it/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121133,13 +121135,13 @@
         1920,
         1080
       ],
-      "bytes": 982030,
-      "sha256": "e39b1713a942d6f98a16cbf6e91c290369bda20d7ef73402d6d9e97b284e69ae",
+      "bytes": 834756,
+      "sha256": "ab05a33094168c9e7b9462d7d9cfdd6ebf8c81d924c9eae7a14376ed614feb53",
       "annotations": []
     },
     {
       "file": "showcase/it/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121150,8 +121152,8 @@
         1920,
         1080
       ],
-      "bytes": 1002538,
-      "sha256": "e7e585852e2984507ba4da588ccdd7157e49fcdc31c664c7463752c826b72315",
+      "bytes": 842250,
+      "sha256": "3eee16c263fcad392cf11d1ab8841197069325cf500039d576f036dcec088986",
       "annotations": []
     },
     {
@@ -121224,7 +121226,7 @@
     },
     {
       "file": "showcase/ja/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121235,13 +121237,13 @@
         1920,
         1080
       ],
-      "bytes": 996946,
-      "sha256": "226e06ffb689deb1fb179d5620d5c824cab554580920ff7f6961c1e820c0c914",
+      "bytes": 832778,
+      "sha256": "b36ddd0c8029b816c0fdb08a827a337cd4dbd1cbbe5198a727bd6d4ae6eeb385",
       "annotations": []
     },
     {
       "file": "showcase/ja/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121252,8 +121254,8 @@
         1920,
         1080
       ],
-      "bytes": 1021144,
-      "sha256": "cc3e371bd9f1e7174bb4cf1fc8e06aaf5ea4ee9db4e21dbeea3766072e7048e0",
+      "bytes": 836522,
+      "sha256": "650f6a40a58a15cd807262663829f95116822df306e45e22089091098a1a63c0",
       "annotations": []
     },
     {
@@ -121326,7 +121328,7 @@
     },
     {
       "file": "showcase/ko/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121337,13 +121339,13 @@
         1920,
         1080
       ],
-      "bytes": 979214,
-      "sha256": "eeb68437265738ba97c2f2c4bcedc3c1724a1b74d5c5eacc5e27c6c326f3275c",
+      "bytes": 828108,
+      "sha256": "9455199a59d05af5fd20e1caf30990ee781d3cfa1ba5f23ed79c9a581406c279",
       "annotations": []
     },
     {
       "file": "showcase/ko/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121354,8 +121356,8 @@
         1920,
         1080
       ],
-      "bytes": 1000962,
-      "sha256": "ecf09bad27c0387114efc150231137f8c0c84431915b29b9ff47fb48e0262a2f",
+      "bytes": 834562,
+      "sha256": "ec8bcd0c007811f06e1e66dfa726a6c2ebd25c89887aabc4bf99d111a6cf23f7",
       "annotations": []
     },
     {
@@ -121428,7 +121430,7 @@
     },
     {
       "file": "showcase/pt-BR/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121439,13 +121441,13 @@
         1920,
         1080
       ],
-      "bytes": 984802,
-      "sha256": "232abc3edbc04ffe253d67fe2317f08c62eb40b3a61542e115104ca09948d783",
+      "bytes": 835358,
+      "sha256": "88e36e929f377891527b5c5e8d3fc2b7440d25f558f70f374ad3a1410c70c382",
       "annotations": []
     },
     {
       "file": "showcase/pt-BR/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121456,8 +121458,8 @@
         1920,
         1080
       ],
-      "bytes": 992840,
-      "sha256": "a11c8e7b75695011cd07cd8ed2b92e61aa2e4d40d75640d5e3ac984c566a1293",
+      "bytes": 843310,
+      "sha256": "9ea2938a1ff805ac323932103ad80c74f9fc8e85752534833a84f6f0ab5040c1",
       "annotations": []
     },
     {
@@ -121530,7 +121532,7 @@
     },
     {
       "file": "showcase/ru/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121541,13 +121543,13 @@
         1920,
         1080
       ],
-      "bytes": 988660,
-      "sha256": "2c3a6668d271e54de616537ed3d0d753dd717089a12f4001924ac8502f046806",
+      "bytes": 841718,
+      "sha256": "373aa3a6dc5ca82aef0ba0760b29536c3325760733939582b9043c56a8a9e04c",
       "annotations": []
     },
     {
       "file": "showcase/ru/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121558,8 +121560,8 @@
         1920,
         1080
       ],
-      "bytes": 993738,
-      "sha256": "b51e31479607e761b4061d4fb9104f956389957f792935811fbd59c86feb216b",
+      "bytes": 844468,
+      "sha256": "41abebe97160e70090d5b04c4676efa97134e3e99c33fef4d75d7e9a6872f488",
       "annotations": []
     },
     {
@@ -121632,7 +121634,7 @@
     },
     {
       "file": "showcase/th/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121643,13 +121645,13 @@
         1920,
         1080
       ],
-      "bytes": 977732,
-      "sha256": "75941a9772b9659bd7fba964a1d062273b129912eea37a16dd3c934a2cd32c16",
+      "bytes": 830706,
+      "sha256": "c4089dd215a9ef088c3f1686234ad836c37d4b8393e640991a8622962eab8ca1",
       "annotations": []
     },
     {
       "file": "showcase/th/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121660,8 +121662,8 @@
         1920,
         1080
       ],
-      "bytes": 983666,
-      "sha256": "646e29cf8862542cf0c8f1b2d1c8630e3fc973c28d8d464f641a9c6f2df4e573",
+      "bytes": 835900,
+      "sha256": "c378d32b0bee2e37a5fa8d36727d83958c9b71213240719f9936faa99a2e4e08",
       "annotations": []
     },
     {
@@ -121734,7 +121736,7 @@
     },
     {
       "file": "showcase/tr/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121745,13 +121747,13 @@
         1920,
         1080
       ],
-      "bytes": 980290,
-      "sha256": "ebdbcbbce05babb43615c1f629064e65762d04f68345f7e9e015583d9aa49052",
+      "bytes": 831458,
+      "sha256": "638e6cbb9f4c351379992ede8182b53df95f1c3afc9295e16d76e54727d2b32d",
       "annotations": []
     },
     {
       "file": "showcase/tr/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121762,8 +121764,8 @@
         1920,
         1080
       ],
-      "bytes": 984842,
-      "sha256": "7421d1f015cd5112c3301f6a40d96557ad6ed238aa67de769a2283da7fc2f977",
+      "bytes": 835822,
+      "sha256": "372c115b9bae2ee7404a1c6d062ebcbf697b3851347469747f60539f60c05c37",
       "annotations": []
     },
     {
@@ -121836,7 +121838,7 @@
     },
     {
       "file": "showcase/vi/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121847,13 +121849,13 @@
         1920,
         1080
       ],
-      "bytes": 982422,
-      "sha256": "b3bac72eef429a87a6a167c680c10f46facaef94eb35548d95616b28e4a63c3e",
+      "bytes": 832346,
+      "sha256": "3e0bc5a3a5a8a6bfd994ad603250ae7b7d47222bfa78587bd466bb4e0e87b0c1",
       "annotations": []
     },
     {
       "file": "showcase/vi/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121864,8 +121866,8 @@
         1920,
         1080
       ],
-      "bytes": 986208,
-      "sha256": "c39e5af72ddb25ee25b0086730244be5e17b9b20f349b2169233963c80350b66",
+      "bytes": 836930,
+      "sha256": "a8915a2377459b833e3210b10ef88822689d8998cf66d6364566bc600e415452",
       "annotations": []
     },
     {
@@ -121938,7 +121940,7 @@
     },
     {
       "file": "showcase/zh-Hant/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -121949,13 +121951,13 @@
         1920,
         1080
       ],
-      "bytes": 977888,
-      "sha256": "b12e7b6cca23d1f3f52339b3ae968e76ea15fbe27a551f132a5de807a185d88e",
+      "bytes": 829942,
+      "sha256": "d1ee9d29de448d555da35ac5bbbbf8a673e78524dffff48593841897c1d93708",
       "annotations": []
     },
     {
       "file": "showcase/zh-Hant/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -121966,8 +121968,8 @@
         1920,
         1080
       ],
-      "bytes": 986986,
-      "sha256": "518adba7d4bc715e38bfa175ef3dc3b1868fa6897fc3ed88ffc90ad7f7ae48cb",
+      "bytes": 835078,
+      "sha256": "e7a4b2a971fd5650afa6447cdc85029b82a89f079ab0d1765cf515042a14bcfd",
       "annotations": []
     },
     {
@@ -122040,7 +122042,7 @@
     },
     {
       "file": "showcase/zh/photo-dark.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "dark",
       "locales": [
@@ -122051,13 +122053,13 @@
         1920,
         1080
       ],
-      "bytes": 979088,
-      "sha256": "bd5398d63cfd998fb12c873bc79989b035ed000038b9587e4c83fc98b0ed8031",
+      "bytes": 829348,
+      "sha256": "75ff9e6b9afe565b6b4be069eef711647c4483d02218f5a0e02e0884b8d60a00",
       "annotations": []
     },
     {
       "file": "showcase/zh/photo-light.webp",
-      "revision": "8261dd86a2464c3c6c5de32f6f68ff987d5c34c0",
+      "revision": "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c",
       "shot": "showcase/photo",
       "theme": "light",
       "locales": [
@@ -122068,8 +122070,8 @@
         1920,
         1080
       ],
-      "bytes": 989688,
-      "sha256": "da37efc3b6e5f5a58244f14869055a31e7808e16ce44aa64345ff8c101c765a6",
+      "bytes": 834822,
+      "sha256": "e710ede1f7dd6fe989efdd3b55a0c4581e324e3428df406d02fa1f81aa840b80",
       "annotations": []
     },
     {
@@ -122156,6 +122158,21 @@
       "hashes": {
         "app.js": "f77d6e6f4dcdfaf5c75f43ba51fcde6f5fbba4531dd7e55ed7211a79d0ac545e",
         "pkg/layer_web_bg.wasm": "6ecef3a69dc06278a0b8f45cc513310a2496af38a2e1d941673da7cd43fe33fb"
+      },
+      "browser": {
+        "protocolVersion": "1.3",
+        "product": "Chrome/156.0.8078.47",
+        "revision": "@1d17a2e2ee147bb7d6ae2ab6abdb3a2510c17775",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+        "jsVersion": "15.6.75.19"
+      }
+    },
+    "dda0ac1eaa8b546d89f0bfd09aea665c2e70625c": {
+      "source": "https://github.com/capyatelier/capycanvas",
+      "patches": [],
+      "hashes": {
+        "app.js": "21c25d930a9470ec001de2b0b39017498c17c372fe5a2e30112bd720713b3147",
+        "pkg/layer_web_bg.wasm": "2218c5bae1eb195bb7f3d90a6b91f8ee748278c8e8cd20d896ec8a87cc9d2646"
       },
       "browser": {
         "protocolVersion": "1.3",

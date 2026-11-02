@@ -98,10 +98,10 @@ try {
   const clip = slide => `document.querySelector('.showcase-frame[data-slide="${slide}"] video')`;
   const finish = slide => b.evaluate(`${clip(slide)}.currentTime=Number(${clip(slide)}.dataset.end)-.4`);
   await b.until(`${clip('paint')}.currentSrc.endsWith('/assets/demos/en/paint-dark.webm')&&${clip('paint')}.currentTime>.05&&document.querySelector('.showcase-frame[data-slide="paint"]').hasAttribute('data-playing')`, 20000); checks++;
-  check(await b.evaluate("!document.querySelector('.showcase-frame[data-slide=\"photo\"] video')"),'Photo stays a still image');
   await finish('paint');
   await b.until("document.querySelector('.showcase input[value=\"photo\"]').checked", 10000); checks++;
   check(await b.evaluate(`${clip('paint')}.paused`),'The Paint clip stops when the slideshow moves on');
+  await b.until(`${clip('photo')}.currentSrc.endsWith('/assets/demos/en/photo-dark.webm')&&${clip('photo')}.currentTime>.05`, 20000); checks++;
   await b.evaluate("[...document.querySelectorAll('.showcase-switcher label')].find(label=>label.textContent.trim()==='Sketch').click()");
   check(await b.evaluate("document.querySelector('.showcase input[value=\"sketch\"]').checked&&document.querySelector('[data-showcase]').hasAttribute('data-playing')"),'Choosing a workspace shows it and the slideshow continues');
   await b.until("getComputedStyle(document.querySelector('.showcase-frame[data-slide=\"sketch\"]')).opacity==='1'"); checks++;

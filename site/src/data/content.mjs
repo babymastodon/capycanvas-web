@@ -20,7 +20,7 @@ export const content = brandTranslations({
       slides: {
         sketch: 'An ink drawing of a train beneath a large tree in the Sketch workspace, where the drawing fills the screen and a few tools sit at the edges.',
         paint: 'An oil painting of a house by the sea at sunset in the Paint workspace, with brushes, colors and layers beside the canvas.',
-        photo: 'A photograph of a small terrarium in the Photo workspace, with the Tonal range tool ready to select by brightness, and Curves and Vibrance adjustment layers.'
+        photo: 'A photograph of a small terrarium in the Photo workspace, with the subject saved as a selection layer above the photo.'
       },
       meta: '{appName} is a cross-platform app for sketching, illustration, and photography, with a powerful GPU-accelerated painting engine.'
     },
@@ -74,7 +74,7 @@ export const content = brandTranslations({
       slides: {
         sketch: 'Sketchワークスペースで表示した、大きな木の下の電車を描いたペン画。絵が画面いっぱいに広がり、道具は画面の端にまとまっています。',
         paint: 'Paintワークスペースで表示した、夕暮れの海辺の家を描いた油彩。キャンバスの横にブラシ、色、レイヤーが並んでいます。',
-        photo: 'Photoワークスペースで表示した、小さなテラリウムの写真。明るさで範囲を選ぶTonal rangeツールと、CurvesとVibranceの調整レイヤーが表示されています。'
+        photo: 'Photoワークスペースで表示した、小さなテラリウムの写真。被写体が選択範囲レイヤーとして写真の上に保存されています。'
       },
       meta: '{appName} は、強力な GPU 加速ペイントエンジンを備えた、スケッチ、イラスト、写真のためのクロスプラットフォームアプリです。'
     },
@@ -128,7 +128,7 @@ export const content = brandTranslations({
       slides: {
         sketch: 'Sketch工作区中的一幅钢笔画：大树下的一节电车。画面铺满整个屏幕，少量工具位于屏幕边缘。',
         paint: 'Paint工作区中的一幅油画：日落时分海边的房子，画布旁边是笔刷、颜色和图层。',
-        photo: 'Photo工作区中的一张小型生态缸照片，显示按亮度选择区域的Tonal range工具，以及Curves和Vibrance调整图层。'
+        photo: 'Photo工作区中的一张小型生态缸照片，主体已作为选区图层保存在照片上方。'
       },
       meta: '{appName} 是一款跨平台应用，配备强大的 GPU 加速绘画引擎，适用于速写、插画和摄影。'
     },
@@ -182,7 +182,7 @@ export const content = brandTranslations({
       slides: {
         sketch: 'Sketch工作區中的一幅鋼筆畫：大樹下的一節電車。畫面鋪滿整個螢幕，少量工具位於螢幕邊緣。',
         paint: 'Paint工作區中的一幅油畫：日落時分海邊的房子，畫布旁邊是筆刷、色彩和圖層。',
-        photo: 'Photo工作區中的一張小型生態缸照片，顯示按亮度選擇區域的Tonal range工具，以及Curves和Vibrance調整圖層。'
+        photo: 'Photo工作區中的一張小型生態缸照片，主體已作為選取範圍圖層儲存在照片上方。'
       },
       meta: '{appName}是一款跨平台應用程式，配備強大的 GPU 加速繪畫引擎，適用於速寫、插畫和攝影。'
     },
@@ -236,7 +236,7 @@ export const content = brandTranslations({
       slides: {
         sketch: 'Sketch 작업 공간에 표시한, 큰 나무 아래의 전차를 그린 펜화. 그림이 화면을 가득 채우고 몇 가지 도구만 가장자리에 있습니다.',
         paint: 'Paint 작업 공간에 표시한, 해 질 녘 바닷가의 집을 그린 유화. 캔버스 옆에 브러시, 색상, 레이어가 있습니다.',
-        photo: 'Photo 작업 공간에 표시한 작은 테라리움 사진. 밝기로 영역을 선택하는 Tonal range 도구와 Curves, Vibrance 조정 레이어가 보입니다.'
+        photo: 'Photo 작업 공간에 표시한 작은 테라리움 사진. 피사체가 사진 위에 선택 영역 레이어로 저장되어 있습니다.'
       },
       meta: '{appName}는 강력한 GPU 가속 페인팅 엔진을 갖춘, 스케치와 일러스트, 사진을 위한 크로스 플랫폼 앱입니다.'
     },

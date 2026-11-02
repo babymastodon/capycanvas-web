@@ -1,11 +1,11 @@
 import { readFile } from 'node:fs/promises';
 import { artwork, scenes } from './showcase-scenes.mjs';
 import { settleLayout } from './shoot.mjs';
+import { opening, prepare } from './demo/photo-journey.mjs';
 
 const command = id => `layerApp.state().commands.find(c=>c.id===${JSON.stringify(id)})`;
 const analysed = `layerApp.state().histogram.status==='Exact'&&!String(layerApp.state().layer_properties?.description??'').includes('Updating')`;
 const thumbnailsDrawn = `[...document.querySelectorAll('#layer-rows .layer-thumbnail canvas')].filter(c=>c.checkVisibility()).every(c=>{const d=c.getContext('2d').getImageData(0,0,c.width,c.height).data;for(let i=3;i<d.length;i+=4)if(d[i])return true;return false})`;
-const highlights = `[...document.querySelectorAll('button[aria-label]')].some(b=>(b.getAttribute('aria-label')||'').startsWith('Highlights'))`;
 
 export default async function showcase({ e, capture }) {
   const restoreLayout = async () => {
@@ -34,10 +34,11 @@ export default async function showcase({ e, capture }) {
     effect: ({ effect: name, parameters }) => effect(name, parameters),
     wait_histogram: () => e.wait(analysed),
   };
+  const revisit = (away, home) => async () => { await e.workspace(away); await e.workspace(home); await settleLayout(e.b); await e.invoke('fit_canvas'); await e.canvas(); await settleLayout(e.b, undefined, 12); };
   const shots = {
     sketch: {},
-    paint: { setup: () => e.b.until(thumbnailsDrawn, 120000), variant: async () => { await e.workspace('painter'); await e.workspace('illustrator'); await settleLayout(e.b); await e.invoke('fit_canvas'); await e.canvas(); await settleLayout(e.b, undefined, 12); } },
-    photo: { ready: () => e.wait(highlights), setup: async () => { await e.wait(analysed); await e.b.until(thumbnailsDrawn, 120000); } },
+    paint: { setup: () => e.b.until(thumbnailsDrawn, 120000), variant: revisit('painter', 'illustrator') },
+    photo: { steps: async () => { await e.select('NDF_4717'); await prepare({ e, b: e.b }); await opening({ e }); await e.invoke('fit_canvas'); }, setup: async () => { await e.wait(analysed); await e.b.until(thumbnailsDrawn, 120000); }, variant: revisit('illustrator', 'photographer') },
   };
 
   const only = process.env.CAPTURE_SCENES?.split(',');
@@ -46,9 +47,9 @@ export default async function showcase({ e, capture }) {
     await restoreLayout();
     await e.provide(scene.source, await readFile(new URL(scene.source, artwork)));
     await e.open(scene.source);
-    for (const step of scene.steps) await steps[step.type](step);
-    const { ready, setup, variant } = shots[scene.id];
-    await ready?.();
+    const { steps: website, setup, variant } = shots[scene.id];
+    if (website) await website();
+    else for (const step of scene.steps) await steps[step.type](step);
     await capture(`showcase/${scene.id}`, { full: true, verify: true, setup, variant });
   }
   await e.workspace('illustrator');

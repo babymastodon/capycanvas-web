@@ -8,12 +8,12 @@ import { languages } from '../site/src/data/content.mjs';
 const root = resolve(process.env.SITE_OUTPUT || 'docs');
 const hash = bytes => createHash('sha256').update(bytes).digest('hex');
 
-test('the Sketch and Paint demos cover every locale and theme with small silent 1080p videos', async () => {
+test('the Sketch, Paint and Photo demos cover every locale and theme with small silent 1080p videos', async () => {
   const manifest = JSON.parse(await readFile(`${root}/assets/demos/manifest.json`, 'utf8'));
   assert.deepEqual(manifest.locales, Object.keys(languages));
   assert.deepEqual(manifest.themes, ['light', 'dark']);
   assert.deepEqual([manifest.width, manifest.height, manifest.fps, manifest.codec, manifest.audio], [1920, 1080, 24, 'vp9', false]);
-  const limits = { sketch: { seconds: [24, 28], bytes: 1500000 }, paint: { seconds: [30, 36], bytes: 3000000 } };
+  const limits = { sketch: { seconds: [24, 28], bytes: 1500000 }, paint: { seconds: [30, 36], bytes: 3000000 }, photo: { seconds: [72, 90], bytes: 6500000 } };
   assert.deepEqual(Object.keys(manifest.demos), Object.keys(limits));
   for (const [id, demo] of Object.entries(manifest.demos)) {
     assert.deepEqual(demo.videos.map(v => `${v.locale}/${v.theme}`), manifest.locales.flatMap(locale => manifest.themes.map(theme => `${locale}/${theme}`)));

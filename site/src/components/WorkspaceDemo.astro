@@ -2,12 +2,12 @@
 import { docsUI } from '../data/docs-ui.mjs';
 import { capturePair } from '../lib/captures.mjs';
 import type { Locale } from '../lib/site';
-interface Props { locale: Locale; id: 'sketch' | 'paint' }
+interface Props { locale: Locale; id: 'sketch' | 'paint' | 'photo' }
 const { locale, id } = Astro.props;
 const copy = docsUI[locale];
 const { shot, alt } = copy.landing.sections[id].image;
 const image = capturePair(shot, locale);
-const label = { sketch: copy.sketchDemo, paint: copy.paintDemo }[id];
+const label = { sketch: copy.sketchDemo, paint: copy.paintDemo, photo: copy.photoDemo }[id];
 ---
 <figure class="guide-figure workspace-demo" data-workspace-demo={id}>
   <picture>

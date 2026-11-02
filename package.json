@@ -22,6 +22,7 @@
     "capture:store": "node site/scripts/store/capture.mjs",
     "capture:demo": "bash site/scripts/run-private-capture.sh site/scripts/capture-demo.mjs",
     "capture:demo:paint": "bash site/scripts/run-private-capture.sh site/scripts/capture-paint-demo.mjs",
+    "capture:demo:photo": "bash site/scripts/run-private-capture.sh site/scripts/capture-photo-demo.mjs",
     "capture:demo:publish": "node site/scripts/publish-demos.mjs",
     "check:branding": "node site/scripts/check-branding.mjs"
   },
