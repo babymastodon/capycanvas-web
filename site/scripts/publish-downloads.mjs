@@ -7,7 +7,7 @@ import { promisify } from 'node:util';
 import { downloadsOrigin, releasesFeedUrl } from '../src/lib/releases.mjs';
 
 const run = promisify(execFile);
-const repository = 'capyatelier/capycanvas';
+const repository = 'babymastodon/capycanvas';
 const bucket = 'capycanvas-downloads';
 const work = resolve('artifacts/downloads');
 const wrangler = resolve('node_modules/.bin/wrangler');
@@ -33,8 +33,8 @@ async function mirrored() {
   return response.json();
 }
 
-async function mirror(tag) {
-  const release = await gh('api', `repos/${repository}/releases/tags/${tag}`);
+async function mirror(release) {
+  const tag = release.tag_name;
   const assets = release.assets.filter(asset => asset.state === 'uploaded');
   const dir = join(work, tag);
   await rm(dir, { recursive: true, force: true });
@@ -69,7 +69,11 @@ async function mirror(tag) {
 const current = await mirrored();
 const tags = (await gh('release', 'list', '--repo', repository, '--exclude-drafts', '--limit', '1000', '--json', 'tagName')).map(release => release.tagName);
 const releases = [];
-for (const tag of tags) releases.push(current.find(release => release.tag_name === tag) ?? await mirror(tag));
+for (const tag of tags) {
+  const release = await gh('api', `repos/${repository}/releases/tags/${tag}`);
+  const listed = current.find(entry => entry.tag_name === tag);
+  releases.push(listed ? { ...listed, html_url: release.html_url, body: release.body } : await mirror(release));
+}
 releases.sort((a, b) => b.published_at.localeCompare(a.published_at));
 await mkdir(work, { recursive: true });
 const feed = join(work, 'releases.json');

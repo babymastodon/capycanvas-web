@@ -1,9 +1,9 @@
 [
   {
-    "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000003",
-    "assets_url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000003/assets",
-    "upload_url": "https://uploads.github.com/repos/capyatelier/capycanvas/releases/412000003/assets{?name,label}",
-    "html_url": "https://github.com/capyatelier/capycanvas/releases/tag/v1.1.0-beta.1",
+    "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000003",
+    "assets_url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000003/assets",
+    "upload_url": "https://uploads.github.com/repos/babymastodon/capycanvas/releases/412000003/assets{?name,label}",
+    "html_url": "https://github.com/babymastodon/capycanvas/releases/tag/v1.1.0-beta.1",
     "id": 412000003,
     "author": {
       "login": "github-actions[bot]",
@@ -38,7 +38,7 @@
     "published_at": "2026-10-03T22:02:19Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000001",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000001",
         "id": 300000001,
         "node_id": "RA_kwDOPcapy300000001",
         "name": "capycanvas-1.1.0-beta.1-windows-x64-setup.exe",
@@ -74,7 +74,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-windows-x64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000002",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000002",
         "id": 300000002,
         "node_id": "RA_kwDOPcapy300000002",
         "name": "capycanvas-1.1.0-beta.1-windows-x64.zip",
@@ -110,7 +110,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-windows-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000003",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000003",
         "id": 300000003,
         "node_id": "RA_kwDOPcapy300000003",
         "name": "capycanvas-1.1.0-beta.1-windows-x64.msix",
@@ -146,7 +146,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-windows-x64.msix"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000004",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000004",
         "id": 300000004,
         "node_id": "RA_kwDOPcapy300000004",
         "name": "capycanvas-1.1.0-beta.1-macos-arm64.dmg",
@@ -182,7 +182,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-macos-arm64.dmg"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000005",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000005",
         "id": 300000005,
         "node_id": "RA_kwDOPcapy300000005",
         "name": "capycanvas-1.1.0-beta.1-linux-x86_64.AppImage",
@@ -218,7 +218,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-linux-x86_64.AppImage"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000006",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000006",
         "id": 300000006,
         "node_id": "RA_kwDOPcapy300000006",
         "name": "capycanvas-1.1.0-beta.1-linux-x86_64.AppImage.zsync",
@@ -254,7 +254,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-linux-x86_64.AppImage.zsync"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000007",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000007",
         "id": 300000007,
         "node_id": "RA_kwDOPcapy300000007",
         "name": "capycanvas-1.1.0-beta.1-android.apk",
@@ -290,7 +290,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-android.apk"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000008",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000008",
         "id": 300000008,
         "node_id": "RA_kwDOPcapy300000008",
         "name": "capycanvas-1.1.0-beta.1-android.aab",
@@ -326,7 +326,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-android.aab"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000009",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000009",
         "id": 300000009,
         "node_id": "RA_kwDOPcapy300000009",
         "name": "capycanvas-1.1.0-beta.1-web.zip",
@@ -362,7 +362,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/capycanvas-1.1.0-beta.1-web.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000010",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000010",
         "id": 300000010,
         "node_id": "RA_kwDOPcapy300000010",
         "name": "SHA256SUMS",
@@ -398,15 +398,15 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.1.0-beta.1/SHA256SUMS"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/capyatelier/capycanvas/tarball/v1.1.0-beta.1",
-    "zipball_url": "https://api.github.com/repos/capyatelier/capycanvas/zipball/v1.1.0-beta.1",
-    "body": "## What's Changed\n* Try the new watercolor brushes by @capyatelier in https://github.com/capyatelier/capycanvas/pull/131\n\n**Full Changelog**: https://github.com/capyatelier/capycanvas/compare/v1.0.2...v1.1.0-beta.1"
+    "tarball_url": "https://api.github.com/repos/babymastodon/capycanvas/tarball/v1.1.0-beta.1",
+    "zipball_url": "https://api.github.com/repos/babymastodon/capycanvas/zipball/v1.1.0-beta.1",
+    "body": "## What's Changed\n* Try the new watercolor brushes by @babymastodon in https://github.com/babymastodon/capycanvas/pull/131\n\n**Full Changelog**: https://github.com/babymastodon/capycanvas/compare/v1.0.2...v1.1.0-beta.1"
   },
   {
-    "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000002",
-    "assets_url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000002/assets",
-    "upload_url": "https://uploads.github.com/repos/capyatelier/capycanvas/releases/412000002/assets{?name,label}",
-    "html_url": "https://github.com/capyatelier/capycanvas/releases/tag/untagged-2f7a3c8aede",
+    "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000002",
+    "assets_url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000002/assets",
+    "upload_url": "https://uploads.github.com/repos/babymastodon/capycanvas/releases/412000002/assets{?name,label}",
+    "html_url": "https://github.com/babymastodon/capycanvas/releases/tag/untagged-2f7a3c8aede",
     "id": 412000002,
     "author": {
       "login": "github-actions[bot]",
@@ -441,7 +441,7 @@
     "published_at": null,
     "assets": [
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000011",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000011",
         "id": 300000011,
         "node_id": "RA_kwDOPcapy300000011",
         "name": "capycanvas-1.0.3-windows-x64-setup.exe",
@@ -477,7 +477,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-windows-x64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000012",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000012",
         "id": 300000012,
         "node_id": "RA_kwDOPcapy300000012",
         "name": "capycanvas-1.0.3-windows-x64.zip",
@@ -513,7 +513,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-windows-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000013",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000013",
         "id": 300000013,
         "node_id": "RA_kwDOPcapy300000013",
         "name": "capycanvas-1.0.3-windows-x64.msix",
@@ -549,7 +549,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-windows-x64.msix"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000014",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000014",
         "id": 300000014,
         "node_id": "RA_kwDOPcapy300000014",
         "name": "capycanvas-1.0.3-macos-arm64.dmg",
@@ -585,7 +585,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-macos-arm64.dmg"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000015",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000015",
         "id": 300000015,
         "node_id": "RA_kwDOPcapy300000015",
         "name": "capycanvas-1.0.3-linux-x86_64.AppImage",
@@ -621,7 +621,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-linux-x86_64.AppImage"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000016",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000016",
         "id": 300000016,
         "node_id": "RA_kwDOPcapy300000016",
         "name": "capycanvas-1.0.3-linux-x86_64.AppImage.zsync",
@@ -657,7 +657,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-linux-x86_64.AppImage.zsync"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000017",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000017",
         "id": 300000017,
         "node_id": "RA_kwDOPcapy300000017",
         "name": "capycanvas-1.0.3-android.apk",
@@ -693,7 +693,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-android.apk"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000018",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000018",
         "id": 300000018,
         "node_id": "RA_kwDOPcapy300000018",
         "name": "capycanvas-1.0.3-android.aab",
@@ -729,7 +729,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-android.aab"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000019",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000019",
         "id": 300000019,
         "node_id": "RA_kwDOPcapy300000019",
         "name": "capycanvas-1.0.3-web.zip",
@@ -765,7 +765,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/capycanvas-1.0.3-web.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000020",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000020",
         "id": 300000020,
         "node_id": "RA_kwDOPcapy300000020",
         "name": "SHA256SUMS",
@@ -801,15 +801,15 @@
         "browser_download_url": "https://downloads.capycanvas.art/untagged-2f7a3c8aede/SHA256SUMS"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/capyatelier/capycanvas/tarball/v1.0.3",
-    "zipball_url": "https://api.github.com/repos/capyatelier/capycanvas/zipball/v1.0.3",
-    "body": "## What's Changed\n* Draft-only fix by @capyatelier in https://github.com/capyatelier/capycanvas/pull/130\n\n**Full Changelog**: https://github.com/capyatelier/capycanvas/compare/v1.0.2...v1.0.3"
+    "tarball_url": "https://api.github.com/repos/babymastodon/capycanvas/tarball/v1.0.3",
+    "zipball_url": "https://api.github.com/repos/babymastodon/capycanvas/zipball/v1.0.3",
+    "body": "## What's Changed\n* Draft-only fix by @babymastodon in https://github.com/babymastodon/capycanvas/pull/130\n\n**Full Changelog**: https://github.com/babymastodon/capycanvas/compare/v1.0.2...v1.0.3"
   },
   {
-    "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000001",
-    "assets_url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000001/assets",
-    "upload_url": "https://uploads.github.com/repos/capyatelier/capycanvas/releases/412000001/assets{?name,label}",
-    "html_url": "https://github.com/capyatelier/capycanvas/releases/tag/v1.0.2",
+    "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000001",
+    "assets_url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000001/assets",
+    "upload_url": "https://uploads.github.com/repos/babymastodon/capycanvas/releases/412000001/assets{?name,label}",
+    "html_url": "https://github.com/babymastodon/capycanvas/releases/tag/v1.0.2",
     "id": 412000001,
     "author": {
       "login": "github-actions[bot]",
@@ -844,7 +844,7 @@
     "published_at": "2026-10-02T18:30:05Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000021",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000021",
         "id": 300000021,
         "node_id": "RA_kwDOPcapy300000021",
         "name": "capycanvas-1.0.2-windows-x64-setup.exe",
@@ -880,7 +880,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-windows-x64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000043",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000043",
         "id": 300000043,
         "node_id": "RA_kwDOPcapy300000043",
         "name": "capycanvas-1.0.2-windows-arm64-setup.exe",
@@ -916,7 +916,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-windows-arm64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000022",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000022",
         "id": 300000022,
         "node_id": "RA_kwDOPcapy300000022",
         "name": "capycanvas-1.0.2-windows-x64.zip",
@@ -952,7 +952,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-windows-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000023",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000023",
         "id": 300000023,
         "node_id": "RA_kwDOPcapy300000023",
         "name": "capycanvas-1.0.2-windows-x64.msix",
@@ -988,7 +988,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-windows-x64.msix"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000024",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000024",
         "id": 300000024,
         "node_id": "RA_kwDOPcapy300000024",
         "name": "capycanvas-1.0.2-macos-arm64.dmg",
@@ -1024,7 +1024,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-macos-arm64.dmg"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000044",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000044",
         "id": 300000044,
         "node_id": "RA_kwDOPcapy300000044",
         "name": "capycanvas-1.0.2-linux-x86_64.flatpak",
@@ -1060,7 +1060,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-linux-x86_64.flatpak"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000045",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000045",
         "id": 300000045,
         "node_id": "RA_kwDOPcapy300000045",
         "name": "capycanvas.flatpakref",
@@ -1096,7 +1096,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas.flatpakref"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000046",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000046",
         "id": 300000046,
         "node_id": "RA_kwDOPcapy300000046",
         "name": "capycanvas-1.0.2-flatpak-repository.tar.zst",
@@ -1132,7 +1132,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-flatpak-repository.tar.zst"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000027",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000027",
         "id": 300000027,
         "node_id": "RA_kwDOPcapy300000027",
         "name": "capycanvas-1.0.2-android.apk",
@@ -1168,7 +1168,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-android.apk"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000028",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000028",
         "id": 300000028,
         "node_id": "RA_kwDOPcapy300000028",
         "name": "capycanvas-1.0.2-android.aab",
@@ -1204,7 +1204,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-android.aab"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000029",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000029",
         "id": 300000029,
         "node_id": "RA_kwDOPcapy300000029",
         "name": "capycanvas-1.0.2-web.zip",
@@ -1240,7 +1240,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/capycanvas-1.0.2-web.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000030",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000030",
         "id": 300000030,
         "node_id": "RA_kwDOPcapy300000030",
         "name": "SHA256SUMS",
@@ -1276,15 +1276,15 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.2/SHA256SUMS"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/capyatelier/capycanvas/tarball/v1.0.2",
-    "zipball_url": "https://api.github.com/repos/capyatelier/capycanvas/zipball/v1.0.2",
-    "body": "# Highlights\r\n\r\n- Pressure curves feel smoother on drawing tablets.\r\n- Layer thumbnails update while you paint.\r\n\r\n## What's Changed\r\n* Smooth pen pressure on Windows Ink by @capyatelier in https://github.com/capyatelier/capycanvas/pull/124\r\n* Keep layer thumbnails current by @capyatelier in https://github.com/capyatelier/capycanvas/pull/127\r\n* See [the guide](/capyatelier/capycanvas/blob/v1.0.2/README.md) and <a href=\"#highlights\" onclick=\"alert(1)\">the highlights</a>.\r\n\r\n<script>alert(\"release notes\")</script><details><summary>More fixes</summary>Undo works after merging layers.</details>\r\n\r\n[Unsafe link](javascript:alert(1))\r\n\r\n```\r\ncapycanvas-1.0.2-linux-x86_64.AppImage\r\n```\r\n\r\n**Full Changelog**: https://github.com/capyatelier/capycanvas/compare/v1.0.1...v1.0.2"
+    "tarball_url": "https://api.github.com/repos/babymastodon/capycanvas/tarball/v1.0.2",
+    "zipball_url": "https://api.github.com/repos/babymastodon/capycanvas/zipball/v1.0.2",
+    "body": "# Highlights\r\n\r\n- Pressure curves feel smoother on drawing tablets.\r\n- Layer thumbnails update while you paint.\r\n\r\n## What's Changed\r\n* Smooth pen pressure on Windows Ink by @babymastodon in https://github.com/babymastodon/capycanvas/pull/124\r\n* Keep layer thumbnails current by @babymastodon in https://github.com/babymastodon/capycanvas/pull/127\r\n* See [the guide](/babymastodon/capycanvas/blob/v1.0.2/README.md) and <a href=\"#highlights\" onclick=\"alert(1)\">the highlights</a>.\r\n\r\n<script>alert(\"release notes\")</script><details><summary>More fixes</summary>Undo works after merging layers.</details>\r\n\r\n[Unsafe link](javascript:alert(1))\r\n\r\n```\r\ncapycanvas-1.0.2-linux-x86_64.AppImage\r\n```\r\n\r\n**Full Changelog**: https://github.com/babymastodon/capycanvas/compare/v1.0.1...v1.0.2"
   },
   {
-    "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000000",
-    "assets_url": "https://api.github.com/repos/capyatelier/capycanvas/releases/412000000/assets",
-    "upload_url": "https://uploads.github.com/repos/capyatelier/capycanvas/releases/412000000/assets{?name,label}",
-    "html_url": "https://github.com/capyatelier/capycanvas/releases/tag/v1.0.1",
+    "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000000",
+    "assets_url": "https://api.github.com/repos/babymastodon/capycanvas/releases/412000000/assets",
+    "upload_url": "https://uploads.github.com/repos/babymastodon/capycanvas/releases/412000000/assets{?name,label}",
+    "html_url": "https://github.com/babymastodon/capycanvas/releases/tag/v1.0.1",
     "id": 412000000,
     "author": {
       "login": "github-actions[bot]",
@@ -1319,7 +1319,7 @@
     "published_at": "2026-09-12T16:05:47Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000031",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000031",
         "id": 300000031,
         "node_id": "RA_kwDOPcapy300000031",
         "name": "capycanvas-1.0.1-windows-x64-setup.exe",
@@ -1355,7 +1355,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-windows-x64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000032",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000032",
         "id": 300000032,
         "node_id": "RA_kwDOPcapy300000032",
         "name": "capycanvas-1.0.1-windows-x64.zip",
@@ -1391,7 +1391,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-windows-x64.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000033",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000033",
         "id": 300000033,
         "node_id": "RA_kwDOPcapy300000033",
         "name": "capycanvas-1.0.1-macos-arm64.dmg",
@@ -1427,7 +1427,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-macos-arm64.dmg"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000034",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000034",
         "id": 300000034,
         "node_id": "RA_kwDOPcapy300000034",
         "name": "capycanvas-1.0.1-linux-x86_64.AppImage",
@@ -1463,7 +1463,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-linux-x86_64.AppImage"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000035",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000035",
         "id": 300000035,
         "node_id": "RA_kwDOPcapy300000035",
         "name": "capycanvas-1.0.1-linux-x86_64.AppImage.zsync",
@@ -1499,7 +1499,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-linux-x86_64.AppImage.zsync"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000036",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000036",
         "id": 300000036,
         "node_id": "RA_kwDOPcapy300000036",
         "name": "capycanvas-1.0.1-android.apk",
@@ -1535,7 +1535,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-android.apk"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000037",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000037",
         "id": 300000037,
         "node_id": "RA_kwDOPcapy300000037",
         "name": "capycanvas-1.0.1-android.aab",
@@ -1571,7 +1571,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-android.aab"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000038",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000038",
         "id": 300000038,
         "node_id": "RA_kwDOPcapy300000038",
         "name": "capycanvas-1.0.1-web.zip",
@@ -1607,7 +1607,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/capycanvas-1.0.1-web.zip"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000039",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000039",
         "id": 300000039,
         "node_id": "RA_kwDOPcapy300000039",
         "name": "SHA256SUMS",
@@ -1643,15 +1643,15 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.1/SHA256SUMS"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/capyatelier/capycanvas/tarball/v1.0.1",
-    "zipball_url": "https://api.github.com/repos/capyatelier/capycanvas/zipball/v1.0.1",
-    "body": "## What's Changed\n* Open files with spaces in their names by @capyatelier in https://github.com/capyatelier/capycanvas/pull/118\n\n**Full Changelog**: https://github.com/capyatelier/capycanvas/compare/v1.0.0...v1.0.1"
+    "tarball_url": "https://api.github.com/repos/babymastodon/capycanvas/tarball/v1.0.1",
+    "zipball_url": "https://api.github.com/repos/babymastodon/capycanvas/zipball/v1.0.1",
+    "body": "## What's Changed\n* Open files with spaces in their names by @babymastodon in https://github.com/babymastodon/capycanvas/pull/118\n\n**Full Changelog**: https://github.com/babymastodon/capycanvas/compare/v1.0.0...v1.0.1"
   },
   {
-    "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/411999999",
-    "assets_url": "https://api.github.com/repos/capyatelier/capycanvas/releases/411999999/assets",
-    "upload_url": "https://uploads.github.com/repos/capyatelier/capycanvas/releases/411999999/assets{?name,label}",
-    "html_url": "https://github.com/capyatelier/capycanvas/releases/tag/v1.0.0",
+    "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/411999999",
+    "assets_url": "https://api.github.com/repos/babymastodon/capycanvas/releases/411999999/assets",
+    "upload_url": "https://uploads.github.com/repos/babymastodon/capycanvas/releases/411999999/assets{?name,label}",
+    "html_url": "https://github.com/babymastodon/capycanvas/releases/tag/v1.0.0",
     "id": 411999999,
     "author": {
       "login": "github-actions[bot]",
@@ -1686,7 +1686,7 @@
     "published_at": "2026-08-30T12:20:31Z",
     "assets": [
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000040",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000040",
         "id": 300000040,
         "node_id": "RA_kwDOPcapy300000040",
         "name": "capycanvas-1.0.0-windows-x64-setup.exe",
@@ -1722,7 +1722,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.0/capycanvas-1.0.0-windows-x64-setup.exe"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000041",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000041",
         "id": 300000041,
         "node_id": "RA_kwDOPcapy300000041",
         "name": "capycanvas-1.0.0-linux-x86_64.AppImage",
@@ -1758,7 +1758,7 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.0/capycanvas-1.0.0-linux-x86_64.AppImage"
       },
       {
-        "url": "https://api.github.com/repos/capyatelier/capycanvas/releases/assets/300000042",
+        "url": "https://api.github.com/repos/babymastodon/capycanvas/releases/assets/300000042",
         "id": 300000042,
         "node_id": "RA_kwDOPcapy300000042",
         "name": "capycanvas-1.0.0-linux-x86_64.AppImage.zsync",
@@ -1794,8 +1794,8 @@
         "browser_download_url": "https://downloads.capycanvas.art/v1.0.0/capycanvas-1.0.0-linux-x86_64.AppImage.zsync"
       }
     ],
-    "tarball_url": "https://api.github.com/repos/capyatelier/capycanvas/tarball/v1.0.0",
-    "zipball_url": "https://api.github.com/repos/capyatelier/capycanvas/zipball/v1.0.0",
+    "tarball_url": "https://api.github.com/repos/babymastodon/capycanvas/tarball/v1.0.0",
+    "zipball_url": "https://api.github.com/repos/babymastodon/capycanvas/zipball/v1.0.0",
     "body": null
   }
 ]

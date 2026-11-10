@@ -56,8 +56,8 @@ test('release notes are sanitized Markdown that fits under the page headings', (
   const html = renderNotes([
     '# Title', '## Section', '<script>alert(1)</script><style>body{}</style>',
     '<img src="https://github.com/user-attachments/assets/a.png" onerror="alert(1)"> <a href="#top" onclick="alert(1)">top</a>',
-    '', '[bad](javascript:alert(1)) [pull](/capyatelier/capycanvas/pull/1) <iframe src="https://example.com"></iframe>', '', 'Note[^1]', '', '[^1]: Footnote.',
-  ].join('\n'), { base: 'https://github.com/capyatelier/capycanvas/releases/tag/v1.0.2', prefix: 'notes-1-0-2-' });
+    '', '[bad](javascript:alert(1)) [pull](/babymastodon/capycanvas/pull/1) <iframe src="https://example.com"></iframe>', '', 'Note[^1]', '', '[^1]: Footnote.',
+  ].join('\n'), { base: 'https://github.com/babymastodon/capycanvas/releases/tag/v1.0.2', prefix: 'notes-1-0-2-' });
   assert.match(html, /^<h3>Title<\/h3>\n<h4>Section<\/h4>/);
   assert.doesNotMatch(html, /<script|<style|<iframe|alert|body\{\}|onerror|onclick|javascript:/);
   assert.ok(html.includes('<img src="https://github.com/user-attachments/assets/a.png">'));

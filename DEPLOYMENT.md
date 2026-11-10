@@ -38,11 +38,14 @@ npm run publish:downloads
 npm run deploy
 ```
 
-`publish:downloads` lists published releases with `gh`, downloads each release
-missing from `releases.json`, checks every file against GitHub's SHA-256 digest,
-uploads it to `downloads.capycanvas.art/<tag>/<file>`, then rewrites
-`releases.json` with download URLs on that domain. Releases already listed are
-not copied again. Drafts are never copied; the site also hides pre-releases.
+`publish:downloads` lists the published releases of `babymastodon/capycanvas`
+with `gh`, downloads each release missing from `releases.json`, checks every
+file against GitHub's SHA-256 digest, uploads it to
+`downloads.capycanvas.art/<tag>/<file>`, then rewrites `releases.json` with
+download URLs on that domain. Releases already listed keep their files and date
+and take their notes and GitHub link from the current release, so rerun both
+commands after editing release notes. Drafts are never copied; the site also
+hides pre-releases.
 
 ## Abuse and billing protection
 

@@ -163,7 +163,7 @@ content and capture requirements.
 ## Downloads and past versions
 
 The Download page and Past versions are built from the published
-[Capy Canvas releases](https://github.com/capyatelier/capycanvas/releases).
+[Capy Canvas releases](https://github.com/babymastodon/capycanvas/releases).
 Drafts are private and pre-releases are not offered, so both are skipped.
 If the GitHub API request fails, the build fails rather than publishing pages
 without the releases.

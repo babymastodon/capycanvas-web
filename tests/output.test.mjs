@@ -104,6 +104,7 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/href="https:\/\/github.com\/babymastodon\/capycanvas"/);
       assert.match(html,/href="https:\/\/github.com\/babymastodon\/capycanvas" target="_blank" rel="noopener noreferrer"/);
     }
+    assert.doesNotMatch(html,/github\.com\/capyatelier\//,'Pages link to the babymastodon repositories');
     if(page==='download'||page==='versions') {
       for(const [,url] of html.matchAll(/href="(https:\/\/downloads\.capycanvas\.art\/[^"]+)"/g)) assert.match(url,releaseFile);
     }
