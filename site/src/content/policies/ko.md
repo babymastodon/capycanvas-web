@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 이 방침은 {appName}와 capycanvas.art 및 editor.capycanvas.art 웹사이트에 적용됩니다. {appName}는 Zachary Drach가 Capy Atelier라는 프로젝트 이름으로 운영합니다.
@@ -16,7 +16,7 @@ effectiveDate: "2026-09-10"
 
 ## 호스팅 및 진단
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement)는 웹사이트와 웹 앱을 호스팅하며, 보안을 위해 방문자의 IP 주소를 기록합니다. [Cloudflare](https://www.cloudflare.com/privacypolicy/)는 DNS를 제공합니다.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/)는 웹사이트, 웹 앱, 다운로드를 호스팅하고 DNS를 제공하며, 보안을 위해 방문자의 IP 주소를 기록합니다.
 
 앱 스토어에서 배포되는 버전의 경우, [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) 또는 [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report)에서 충돌 보고서와 기술 진단 정보를 받을 수 있습니다. 보고서에는 기기 정보, 앱 및 운영체제 버전, 오류 세부 정보가 포함될 수 있습니다. 이러한 플랫폼 제공 보고서는 문제를 조사하고 안정성을 개선하는 데 사용합니다. 정보의 수집과 공유는 플랫폼의 정책 및 진단 정보 공유 설정에 따릅니다.
 

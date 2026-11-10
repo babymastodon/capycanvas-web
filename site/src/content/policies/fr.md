@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Cette politique couvre {appName} et les sites Web capycanvas.art et editor.capycanvas.art. {appName} est exploité par Zachary Drach sous le nom de projet Capy Atelier.
@@ -16,7 +16,7 @@ Nous n'utilisons pas de publicité ou d'analyse d'utilisation, ne vendons pas d'
 
 ## Hébergement et diagnostic
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) héberge le site Web et l'application Web et enregistre les adresses IP des visiteurs pour des raisons de sécurité. [Cloudflare](https://www.cloudflare.com/privacypolicy/) fournit DNS.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) héberge le site Web, l'application Web et les téléchargements, fournit le DNS et enregistre les adresses IP des visiteurs pour des raisons de sécurité.
 
 Pour les versions distribuées en magasin, nous pouvons recevoir des rapports d'erreur et des diagnostics techniques de [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) ou [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report). Les rapports peuvent inclure des informations sur l'appareil, les versions de l'application et du système d'exploitation, ainsi que les détails d'une panne. Nous utilisons ces rapports fournis par la plateforme pour enquêter sur les problèmes et améliorer la stabilité. La collecte et le partage dépendent des politiques et des paramètres de partage de diagnostic de la plateforme.
 

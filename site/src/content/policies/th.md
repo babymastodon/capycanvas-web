@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 นโยบายนี้ครอบคลุมถึง {appName} และเว็บไซต์ capycanvas.art และ editor.capycanvas.art {appName} ดำเนินการโดย Zachary Drach ภายใต้ชื่อโครงการ Capy Atelier
@@ -16,7 +16,7 @@ effectiveDate: "2026-09-10"
 
 ## โฮสติ้งและการวินิจฉัย
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) โฮสต์เว็บไซต์และเว็บแอป และบันทึกที่อยู่ IP ของผู้เยี่ยมชมเพื่อความปลอดภัย [Cloudflare](https://www.cloudflare.com/privacypolicy/) จัดเตรียม DNS
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) โฮสต์เว็บไซต์ เว็บแอป และไฟล์ดาวน์โหลด จัดเตรียม DNS และบันทึกที่อยู่ IP ของผู้เยี่ยมชมเพื่อความปลอดภัย
 
 สำหรับเวอร์ชันที่จำหน่ายในร้าน เราอาจได้รับรายงานข้อขัดข้องและการวินิจฉัยทางเทคนิคจาก [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) หรือ [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report)] รายงานอาจรวมถึงข้อมูลอุปกรณ์ เวอร์ชันของแอปและระบบปฏิบัติการ และรายละเอียดของความล้มเหลว เราใช้รายงานจากแพลตฟอร์มเหล่านี้เพื่อตรวจสอบปัญหาและปรับปรุงเสถียรภาพ การรวบรวมและการแชร์ขึ้นอยู่กับนโยบายของแพลตฟอร์มและการตั้งค่าการแบ่งปันการวินิจฉัย
 

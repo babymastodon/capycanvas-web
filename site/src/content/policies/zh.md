@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 本政策适用于 {appName} 以及 capycanvas.art 和 editor.capycanvas.art 网站。{appName} 由 Zachary Drach 以 Capy Atelier 项目名称运营。
@@ -16,7 +16,7 @@ effectiveDate: "2026-09-10"
 
 ## 托管与诊断
 
-网站和网页版应用由 [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) 托管。GitHub 会出于安全目的记录访客的 IP 地址。[Cloudflare](https://www.cloudflare.com/privacypolicy/) 提供 DNS 服务。
+网站、网页版应用和下载文件由 [Cloudflare](https://www.cloudflare.com/privacypolicy/) 托管。Cloudflare 还提供 DNS 服务，并会出于安全目的记录访客的 IP 地址。
 
 对于通过应用商店分发的版本，我们可能会收到 [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/)、[Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) 或 [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report) 提供的崩溃报告和技术诊断信息。报告可能包含设备信息、应用及操作系统版本，以及故障详情。我们使用这些平台提供的报告来调查问题并改善稳定性。信息的收集与共享取决于平台的政策和诊断信息共享设置。
 

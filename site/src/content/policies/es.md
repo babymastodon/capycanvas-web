@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Esta póliza cubre {appName} y los sitios web capycanvas.art y editor.capycanvas.art. {appName} es operado por Zachary Drach bajo el nombre de proyecto Capy Atelier.
@@ -16,7 +16,7 @@ No utilizamos publicidad ni análisis de uso, no vendemos información personal 
 
 ## Alojamiento y diagnóstico
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) aloja el sitio web y la aplicación web y registra las direcciones IP de los visitantes por motivos de seguridad. [Cloudflare](https://www.cloudflare.com/privacypolicy/) proporciona DNS.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) aloja el sitio web, la aplicación web y las descargas, proporciona DNS y registra las direcciones IP de los visitantes por motivos de seguridad.
 
 Para las versiones distribuidas en tiendas, es posible que recibamos informes de fallas y diagnósticos técnicos de [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) o [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report). Los informes pueden incluir información del dispositivo, versiones de aplicaciones y sistemas operativos, y detalles de una falla. Utilizamos estos informes proporcionados por la plataforma para investigar problemas y mejorar la estabilidad. La recopilación y el uso compartido dependen de las políticas de la plataforma y de la configuración de intercambio de diagnósticos.
 

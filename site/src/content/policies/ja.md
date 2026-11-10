@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 本ポリシーは、{appName} および capycanvas.art、editor.capycanvas.art のウェブサイトに適用されます。{appName} は、Zachary Drach が Capy Atelier というプロジェクト名で運営しています。
@@ -16,7 +16,7 @@ effectiveDate: "2026-09-10"
 
 ## ホスティングと診断情報
 
-ウェブサイトとウェブ版アプリは [GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) でホストされており、GitHub はセキュリティのために訪問者の IP アドレスを記録します。DNS は [Cloudflare](https://www.cloudflare.com/privacypolicy/) が提供しています。
+ウェブサイト、ウェブ版アプリ、ダウンロードは [Cloudflare](https://www.cloudflare.com/privacypolicy/) でホストされています。Cloudflare は DNS も提供し、セキュリティのために訪問者の IP アドレスを記録します。
 
 ストアで配布されるバージョンについては、[Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/)、[Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en)、[Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report) からクラッシュレポートや技術的な診断情報を受け取る場合があります。レポートには、端末情報、アプリや OS のバージョン、障害の詳細が含まれる場合があります。当方は、これらのプラットフォームが提供するレポートを、問題の調査と安定性の改善に使用します。情報の収集と共有は、各プラットフォームのポリシーと診断情報の共有設定に従います。
 

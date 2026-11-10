@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Chính sách này áp dụng cho {appName} và các trang web capycanvas.art và editor.capycanvas.art. {appName} được vận hành bởi Zachary Drach với tên dự án Capy Atelier.
@@ -16,7 +16,7 @@ Chúng tôi không sử dụng phân tích quảng cáo hoặc sử dụng, bán
 
 ## Lưu trữ và chẩn đoán
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) lưu trữ trang web và ứng dụng web, đồng thời ghi lại địa chỉ IP của khách truy cập để bảo mật. [Cloudflare](https://www.cloudflare.com/privacypolicy/) cung cấp DNS.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) lưu trữ trang web, ứng dụng web và các tệp tải xuống, cung cấp DNS, đồng thời ghi lại địa chỉ IP của khách truy cập để bảo mật.
 
 Đối với các phiên bản do cửa hàng phân phối, chúng tôi có thể nhận được báo cáo sự cố và chẩn đoán kỹ thuật từ [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) hoặc [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report). Các báo cáo có thể bao gồm thông tin thiết bị, phiên bản ứng dụng và hệ điều hành cũng như chi tiết về lỗi. Chúng tôi sử dụng các báo cáo do nền tảng cung cấp này để điều tra sự cố và cải thiện độ ổn định. Việc thu thập và chia sẻ tùy thuộc vào chính sách của nền tảng và cài đặt chia sẻ chẩn đoán.
 

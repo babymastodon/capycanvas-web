@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Diese Richtlinie gilt für {appName} und die Websites capycanvas.art und editor.capycanvas.art. {appName} wird von Zachary Drach unter dem Projektnamen Capy Atelier betrieben.
@@ -16,7 +16,7 @@ Wir verwenden keine Werbung oder Nutzungsanalysen, verkaufen keine personenbezog
 
 ## Hosting und Diagnose
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) hostet die Website und die Web-App und protokolliert aus Sicherheitsgründen die IP-Adressen der Besucher. [Cloudflare](https://www.cloudflare.com/privacypolicy/) bietet DNS.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) hostet die Website, die Web-App und die Downloads, stellt DNS bereit und protokolliert aus Sicherheitsgründen die IP-Adressen der Besucher.
 
 Für im Store vertriebene Versionen erhalten wir möglicherweise Absturzberichte und technische Diagnosen von [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) oder [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report). Berichte können Geräteinformationen, App- und Betriebssystemversionen sowie Details zu einem Fehler enthalten. Wir nutzen diese von der Plattform bereitgestellten Berichte, um Probleme zu untersuchen und die Stabilität zu verbessern. Die Erfassung und Freigabe hängt von den Richtlinien und Diagnosefreigabeeinstellungen der Plattform ab.
 

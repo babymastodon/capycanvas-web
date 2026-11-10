@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Bu politika {appName} ile capycanvas.art ve editor.capycanvas.art web sitelerini kapsar. {appName}, Zachary Drach tarafından Capy Atelier proje adı altında çalıştırılır.
@@ -16,7 +16,7 @@ Reklam veya kullanım analizlerini kullanmıyoruz, kişisel bilgileri satmıyoru
 
 ## Barındırma ve teşhis
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement), web sitesini ve web uygulamasını barındırır ve güvenlik amacıyla ziyaretçilerin IP adreslerini günlüğe kaydeder. [Cloudflare](https://www.cloudflare.com/privacypolicy/), DNS'yu sağlar.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/), web sitesini, web uygulamasını ve indirmeleri barındırır, DNS'yi sağlar ve güvenlik amacıyla ziyaretçilerin IP adreslerini günlüğe kaydeder.
 
 Mağazada dağıtılan sürümler için, [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en) veya [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report)] adresinden kilitlenme raporları ve teknik teşhisler alabiliriz. Raporlar cihaz bilgilerini, uygulama ve işletim sistemi sürümlerini ve bir arızanın ayrıntılarını içerebilir. Sorunları araştırmak ve kararlılığı artırmak için platform tarafından sağlanan bu raporları kullanırız. Toplama ve paylaşma, platformun politikalarına ve teşhis paylaşım ayarlarına bağlıdır.
 

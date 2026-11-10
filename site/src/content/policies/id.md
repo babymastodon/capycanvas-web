@@ -1,5 +1,5 @@
 ---
-effectiveDate: "2026-09-10"
+effectiveDate: "2026-11-10"
 ---
 
 Kebijakan ini mencakup {appName} dan situs web capycanvas.art dan editor.capycanvas.art. {appName} dioperasikan oleh Zachary Drach dengan nama proyek Capy Atelier.
@@ -16,7 +16,7 @@ Kami tidak menggunakan periklanan atau analisis penggunaan, menjual informasi pr
 
 ## Hosting dan diagnostik
 
-[GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) menghosting situs web dan aplikasi web serta mencatat alamat IP pengunjung untuk keamanan. [Cloudflare](https://www.cloudflare.com/privacypolicy/) menyediakan DNS.
+[Cloudflare](https://www.cloudflare.com/privacypolicy/) menghosting situs web, aplikasi web, dan unduhan, menyediakan DNS, serta mencatat alamat IP pengunjung untuk keamanan.
 
 Untuk versi yang didistribusikan di toko, kami mungkin menerima laporan kerusakan dan diagnostik teknis dari [Apple](https://www.apple.com/legal/privacy/data/en/app-analytics/), [Google](https://support.google.com/googleplay/android-developer/answer/9859174?hl=en), atau [Microsoft](https://learn.microsoft.com/en-us/windows/apps/publish/analyze-app-performance/health-report). Laporan dapat mencakup informasi perangkat, versi aplikasi dan sistem operasi, serta detail kegagalan. Kami menggunakan laporan yang disediakan platform ini untuk menyelidiki masalah dan meningkatkan stabilitas. Pengumpulan dan pembagian bergantung pada kebijakan platform dan pengaturan berbagi diagnostik.
 
