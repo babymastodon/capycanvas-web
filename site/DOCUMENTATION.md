@@ -130,8 +130,8 @@ Run `npm run check` from the repository root. It type-checks and builds Astro,
 validates the published HTML, checks captures and their provenance, runs the
 writing checks, and checks layouts, themes, languages, device notes, keyboard
 navigation and no-JavaScript behavior in Chrome. Inspect `artifacts/review/` when
-changing layouts or content. Commit the `site/` sources and publish with
-`npm run deploy`, which builds `docs/` and publishes it to Cloudflare.
+changing layouts or content. Commit the `site/` sources; pushing to `main` builds `docs/` and publishes it
+to Cloudflare.
 
 Custom page behavior belongs in a small Astro component with a processed browser
 script. `PlatformNotes.astro` shows the pattern: detect the reader's device, let

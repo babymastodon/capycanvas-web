@@ -6,25 +6,29 @@ creates its DNS record; never point these names at another host by hand.
 
 | Hostname | Served by | Deployed with |
 | --- | --- | --- |
-| `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | `npm run deploy` |
-| `www.capycanvas.art` | Worker `capycanvas-www`, redirects to the apex | `npm run deploy` |
+| `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | Push to `main`, or `npm run deploy` |
+| `www.capycanvas.art` | Worker `capycanvas-www`, redirects to the apex | Push to `main`, or `npm run deploy` |
 | `downloads.capycanvas.art` | R2 bucket `capycanvas-downloads` | `npm run publish:downloads` |
 | `editor.capycanvas.art` | Worker `capycanvas-editor` | `node release/cloudflare/deploy.mjs` in [capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release) |
 | `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | `bash packaging/flatpak/publish.sh` in [capyatelier/capycanvas](https://github.com/capyatelier/capycanvas) |
 
-Deploys run from a maintainer's machine. Log in once with `npx wrangler login`
+Other deploys run from a maintainer's machine. Log in once with `npx wrangler login`
 as a member of the Cloudflare account that owns the `capycanvas.art` zone. If
 that login can reach more than one account, set `CLOUDFLARE_ACCOUNT_ID` in your
 own environment. No account IDs, API tokens or keys are stored in the repository.
 
 ## Deploy the site
 
-```sh
-npm run deploy
-```
+Every push to `main` runs `.github/workflows/site.yml`: the build, output and
+browser checks, then `npm run deploy:workers`, which uploads `docs/` to
+`capycanvas-web` and deploys the `www` redirect from `www/`. Pull requests run
+the checks only. Rerun a deploy with `gh workflow run site.yml --ref main`.
 
-This runs `npm run check`, then uploads `docs/` to `capycanvas-web` and deploys
-the `www` redirect from `www/`. Never edit the generated HTML; `docs/` is ignored
+The deploy step reads `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` from
+the repository's `cloudflare` environment, which only `main` may use. The token
+is an account API token from the **Edit Cloudflare Workers** template, limited
+to this account and the `capycanvas.art` zone. To deploy from your own machine
+instead, run `npm run deploy`, which runs the same checks first. Never edit the generated HTML; `docs/` is ignored
 and every build replaces it.
 
 ## After publishing a Capy Canvas release
@@ -35,7 +39,7 @@ GitHub, copy it to R2 and rebuild the site:
 
 ```sh
 npm run publish:downloads
-npm run deploy
+gh workflow run site.yml --ref main
 ```
 
 `publish:downloads` lists the published releases of `babymastodon/capycanvas`

@@ -22,7 +22,7 @@ executable; the default is `google-chrome`. Browser checks launch their own
 local server and save review screenshots to ignored `artifacts/review/`.
 
 Edit source in `site/`. `docs/` is ignored build output that Astro replaces
-completely on every build; `npm run deploy` builds and publishes it to
+completely on every build; each push to `main` builds and publishes it to
 Cloudflare, with no server-side JavaScript, external fonts, or analytics.
 The source is independent of the adjacent app repository except when explicitly
 recapturing screenshots and reading published releases at build time.
@@ -232,7 +232,7 @@ response and including a draft, a pre-release and an unfinished upload, and from
 `tests/fixtures/no-releases.json`, into `artifacts/release-pages/`.
 
 **After publishing a Capy Canvas release, run `npm run publish:downloads` and
-`npm run deploy`** so the Download page picks it up ([DEPLOYMENT.md](DEPLOYMENT.md)).
+`gh workflow run site.yml --ref main`** so the Download page picks it up ([DEPLOYMENT.md](DEPLOYMENT.md)).
 The online editor at editor.capycanvas.art is deployed separately from
 [capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release).
 
@@ -328,8 +328,9 @@ use a current reference build when checking subsequent visual regressions.
 
 ## Publish
 
-`npm run deploy` runs the build, output and browser checks, then publishes `docs/`
-to Cloudflare. Pull requests run the same checks in **Verify site**.
+Each push to `main` runs the **Site** workflow: the build, output and browser
+checks, then the Cloudflare deploy. Pull requests run the same checks without
+deploying, and `npm run deploy` does both from a maintainer's machine.
 See [DEPLOYMENT.md](DEPLOYMENT.md) for the hostnames and release downloads.
 
 The public documentation route is `/docs/`.
