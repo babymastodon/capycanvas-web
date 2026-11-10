@@ -5,3 +5,4 @@ artifacts/
 /docs/
 
 gha-creds-*.json
+.wrangler/

@@ -4,12 +4,12 @@ import assert from 'node:assert/strict';
 import { readFile, readdir } from 'node:fs/promises';
 import { join } from 'node:path';
 import { content, languages } from '../site/src/data/content.mjs';
-import { fetchReleases, publishedReleases, upcomingReleases, releasesApiUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
+import { fetchReleases, publishedReleases, upcomingReleases, releasesFeedUrl, releasesUrl, renderNotes } from '../site/src/lib/releases.mjs';
 import { buildReleaseSite } from './release-sites.mjs';
 
 const fixture = JSON.parse(await readFile('tests/fixtures/releases.json', 'utf8'));
-const download = 'https://github.com/capyatelier/capycanvas/releases/download';
-const flatpakRef = 'https://capyatelier.github.io/capycanvas/capycanvas.flatpakref';
+const download = 'https://downloads.capycanvas.art';
+const flatpakRef = 'https://flatpak.capycanvas.art/capycanvas.flatpakref';
 const neverOffered = /(?:\.msix|\.aab|\.zsync|\.zip|\.AppImage|\.tar\.zst|SHA256SUMS)"/;
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
@@ -67,19 +67,15 @@ test('release notes are sanitized Markdown that fits under the page headings', (
   assert.match(html, /<li id="notes-1-0-2-fn-1">/);
 });
 
-test('the GitHub API is read page by page, with GITHUB_TOKEN when set', async () => {
+test('releases are read from the download mirror', async () => {
   const requests = [];
-  const pages = { [releasesApiUrl]: [[fixture[0]], '<https://api.github.com/page2>; rel="next", <https://api.github.com/page2>; rel="last"'], 'https://api.github.com/page2': [[fixture[1]], ''] };
-  const fetch = async (url, { headers }) => {
-    requests.push([url, headers.Authorization]);
-    return new Response(JSON.stringify(pages[url][0]), { headers: { link: pages[url][1] } });
+  const fetch = async (url, options) => {
+    requests.push([url, options.cache]);
+    return Response.json(fixture);
   };
-  assert.deepEqual(await fetchReleases({ token: 'secret', fetch }), fixture.slice(0, 2));
-  assert.deepEqual(requests, [[releasesApiUrl, 'Bearer secret'], ['https://api.github.com/page2', 'Bearer secret']]);
-  requests.length = 0;
-  await fetchReleases({ token: '', fetch });
-  assert.deepEqual(requests.map(([, authorization]) => authorization), [undefined, undefined]);
-  await assert.rejects(fetchReleases({ token: '', fetch: async () => new Response('{}', { status: 403, statusText: 'rate limit exceeded' }) }), /403 rate limit exceeded/);
+  assert.deepEqual(await fetchReleases({ fetch }), fixture);
+  assert.deepEqual(requests, [[releasesFeedUrl, 'no-store']]);
+  await assert.rejects(fetchReleases({ fetch: async () => new Response('', { status: 404, statusText: 'Not Found' }) }), /404 Not Found/);
 });
 
 let published, empty;

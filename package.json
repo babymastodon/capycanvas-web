@@ -24,7 +24,9 @@
     "capture:demo:paint": "bash site/scripts/run-private-capture.sh site/scripts/capture-paint-demo.mjs",
     "capture:demo:photo": "bash site/scripts/run-private-capture.sh site/scripts/capture-photo-demo.mjs",
     "capture:demo:publish": "node site/scripts/publish-demos.mjs",
-    "check:branding": "node site/scripts/check-branding.mjs"
+    "check:branding": "node site/scripts/check-branding.mjs",
+    "deploy": "npm run check && wrangler deploy && wrangler deploy --config www/wrangler.jsonc",
+    "publish:downloads": "node site/scripts/publish-downloads.mjs"
   },
   "devDependencies": {
     "@astrojs/check": "0.9.10",
@@ -40,6 +42,7 @@
     "remark-rehype": "11.1.2",
     "satteri": "0.10.5",
     "typescript": "6.0.3",
-    "unified": "11.0.5"
+    "unified": "11.0.5",
+    "wrangler": "4.160.0"
   }
 }

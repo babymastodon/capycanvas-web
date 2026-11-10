@@ -7,7 +7,8 @@ import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
 
 export const releasesUrl = 'https://github.com/capyatelier/capycanvas/releases';
-export const releasesApiUrl = 'https://api.github.com/repos/capyatelier/capycanvas/releases?per_page=100';
+export const downloadsOrigin = 'https://downloads.capycanvas.art';
+export const releasesFeedUrl = `${downloadsOrigin}/releases.json`;
 export const platformFiles = {
   android: { apk: version => `capycanvas-${version}-android.apk` },
   linux: { flatpak: version => `capycanvas-${version}-linux-x86_64.flatpak` },
@@ -17,24 +18,13 @@ export const platformFiles = {
   },
   mac: { appleSilicon: version => `capycanvas-${version}-macos-arm64.dmg` },
 };
-export const installFiles = { flatpak: { name: 'capycanvas.flatpakref', url: 'https://capyatelier.github.io/capycanvas/capycanvas.flatpakref' } };
+export const installFiles = { flatpak: { name: 'capycanvas.flatpakref', url: 'https://flatpak.capycanvas.art/capycanvas.flatpakref' } };
 const notesHeadingLevel = 3;
 
-export async function fetchReleases({ token = process.env.GITHUB_TOKEN, fetch = globalThis.fetch } = {}) {
-  const headers = {
-    Accept: 'application/vnd.github+json',
-    'User-Agent': 'capycanvas-web',
-    'X-GitHub-Api-Version': '2022-11-28',
-    ...(token ? { Authorization: `Bearer ${token}` } : {}),
-  };
-  const releases = [];
-  for (let url = releasesApiUrl; url;) {
-    const response = await fetch(url, { headers });
-    if (!response.ok) throw new Error(`GitHub releases request failed with ${response.status} ${response.statusText}: ${url}`);
-    releases.push(...await response.json());
-    url = response.headers.get('link')?.match(/<([^>]+)>;\s*rel="next"/)?.[1];
-  }
-  return releases;
+export async function fetchReleases({ fetch = globalThis.fetch } = {}) {
+  const response = await fetch(releasesFeedUrl, { cache: 'no-store' });
+  if (!response.ok) throw new Error(`Releases request failed with ${response.status} ${response.statusText}: ${releasesFeedUrl}`);
+  return response.json();
 }
 
 export function publishedReleases(releases) {

@@ -192,8 +192,7 @@ test('every local link and referenced asset resolves in the published output',as
     }
   }
 });
-test('GitHub Pages output, sitemap, error page and distributable notices',async()=>{
-  assert.equal(await read('CNAME'),'capycanvas.art\n'); assert.equal(await read('.nojekyll'),'');
+test('sitemap, error page and distributable notices',async()=>{
   assert.equal((await read('sitemap.xml')).match(/<loc>/g).length,Object.keys(languages).length*(pages.length+docTopics.length));
   assert.match(await read('robots.txt'),/Sitemap: https:\/\/capycanvas.art\/sitemap.xml/);
   assert.match(await read('404.html'),/name="robots" content="noindex"/);
