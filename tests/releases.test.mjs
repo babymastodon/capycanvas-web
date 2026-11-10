@@ -14,7 +14,7 @@ const neverOffered = /(?:\.msix|\.aab|\.zsync|\.zip|\.AppImage|\.tar\.zst|SHA256
 const prefix = locale => locale === 'en' ? '' : `${locale}/`;
 const escape = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 const escapeText = text => escape(text).replaceAll("'", '&#39;');
-const lead = t => escapeText(t.intro).replace('{feedback}', `<a href="https://github.com/capyatelier/capycanvas/issues">${escapeText(t.feedback)}</a>`);
+const lead = t => escapeText(t.intro).replace('{feedback}', `<a href="https://github.com/babymastodon/capycanvas/issues">${escapeText(t.feedback)}</a>`);
 
 test('only published releases are offered, newest first', () => {
   const releases = publishedReleases(fixture);
@@ -43,7 +43,7 @@ test('each platform offers its variants, and the Flatpak installs through its re
     windows: [{ variant: 'x64', ...asset('capycanvas-1.0.2-windows-x64-setup.exe') }, { variant: 'arm64', ...asset('capycanvas-1.0.2-windows-arm64-setup.exe') }],
     mac: [{ variant: 'appleSilicon', ...asset('capycanvas-1.0.2-macos-arm64.dmg') }],
   });
-  assert.equal(latest.url, 'https://github.com/capyatelier/capycanvas/releases/tag/v1.0.2');
+  assert.equal(latest.url, 'https://github.com/babymastodon/capycanvas/releases/tag/v1.0.2');
   assert.deepEqual(Object.keys(previous.files), ['android', 'windows'], 'AppImages and an unfinished upload are not offered');
   assert.deepEqual(Object.keys(first.files), ['windows']);
   assert.equal(first.notes, '');
@@ -62,7 +62,7 @@ test('release notes are sanitized Markdown that fits under the page headings', (
   assert.doesNotMatch(html, /<script|<style|<iframe|alert|body\{\}|onerror|onclick|javascript:/);
   assert.ok(html.includes('<img src="https://github.com/user-attachments/assets/a.png">'));
   assert.ok(html.includes('<a href="#notes-1-0-2-top">top</a>'));
-  assert.ok(html.includes('<a href="https://github.com/capyatelier/capycanvas/pull/1">pull</a>'));
+  assert.ok(html.includes('<a href="https://github.com/babymastodon/capycanvas/pull/1">pull</a>'));
   assert.match(html, /href="#notes-1-0-2-fn-1" id="notes-1-0-2-fnref-1"/);
   assert.match(html, /<li id="notes-1-0-2-fn-1">/);
 });
@@ -148,7 +148,7 @@ for (const locale of Object.keys(languages)) {
       const links = [...article.matchAll(/<li[^>]*><a href="([^"]+)"[^>]*>(?:<svg[\s\S]*?<\/svg>)?([^<]+)(?:<svg[\s\S]*?<\/svg>)?<\/a>/g)].map(([, url, label]) => [url, label]);
       assert.deepEqual(links, [
         ...files.map(([file, label]) => [`${download}/v${version}/capycanvas-${version}-${file}`, escapeText(label)]),
-        [`https://github.com/capyatelier/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
+        [`https://github.com/babymastodon/capycanvas/releases/tag/v${version}`, escapeText(t.versions.github)],
       ]);
     }
     assert.equal(page.split('class="release-notes" lang="en"').length, 4, 'Upcoming notes and two published releases have notes');

@@ -24,7 +24,7 @@ For store-distributed versions, we may receive crash reports and technical diagn
 
 If you contact us, we receive the username or email address, messages, and attachments you provide. We use them to respond and investigate reported problems.
 
-Support through [GitHub issues](https://github.com/capyatelier/capycanvas/issues) is public. Email correspondence is handled through Gmail under [Google's Privacy Policy](https://policies.google.com/privacy).
+Support through [GitHub issues](https://github.com/babymastodon/capycanvas/issues) is public. Email correspondence is handled through Gmail under [Google's Privacy Policy](https://policies.google.com/privacy).
 
 ## Retention, security, and your choices
 

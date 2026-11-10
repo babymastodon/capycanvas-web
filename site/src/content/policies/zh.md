@@ -24,7 +24,7 @@ effectiveDate: "2026-11-10"
 
 如果您联系我们，我们会收到您提供的用户名或电子邮件地址、消息及附件。我们使用这些信息来回复您并调查所报告的问题。
 
-通过 [GitHub Issues](https://github.com/capyatelier/capycanvas/issues) 进行的支持交流是公开的。电子邮件通过 Gmail 处理，适用 [Google 隐私政策](https://policies.google.com/privacy)。
+通过 [GitHub Issues](https://github.com/babymastodon/capycanvas/issues) 进行的支持交流是公开的。电子邮件通过 Gmail 处理，适用 [Google 隐私政策](https://policies.google.com/privacy)。
 
 ## 保留、安全与您的选择
 

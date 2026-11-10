@@ -24,7 +24,7 @@ Chúng tôi không sử dụng phân tích quảng cáo hoặc sử dụng, bán
 
 Nếu bạn liên hệ với chúng tôi, chúng tôi sẽ nhận được tên người dùng hoặc địa chỉ email, tin nhắn và tệp đính kèm mà bạn cung cấp. Chúng tôi sử dụng chúng để phản hồi và điều tra các vấn đề được báo cáo.
 
-Hỗ trợ thông qua [các vấn đề GitHub](https://github.com/capyatelier/capycanvas/issues) được công khai. Thư từ qua email được xử lý thông qua Gmail theo Chính sách quyền riêng tư của [Google](https://policies.google.com/privacy).
+Hỗ trợ thông qua [các vấn đề GitHub](https://github.com/babymastodon/capycanvas/issues) được công khai. Thư từ qua email được xử lý thông qua Gmail theo Chính sách quyền riêng tư của [Google](https://policies.google.com/privacy).
 
 ## Lưu giữ, bảo mật và lựa chọn của bạn
 

@@ -24,7 +24,7 @@ Mağazada dağıtılan sürümler için, [Apple](https://www.apple.com/legal/pri
 
 Bizimle iletişime geçerseniz sağladığınız kullanıcı adını veya e-posta adresini, mesajları ve ekleri alırız. Bunları, bildirilen sorunlara yanıt vermek ve araştırmak için kullanırız.
 
-[GitHub sorunları](https://github.com/capyatelier/capycanvas/issues) aracılığıyla destek herkese açıktır. E-posta yazışmaları, [Google'nun Gizlilik Politikası](https://policies.google.com/privacy) kapsamında Gmail aracılığıyla gerçekleştirilir.
+[GitHub sorunları](https://github.com/babymastodon/capycanvas/issues) aracılığıyla destek herkese açıktır. E-posta yazışmaları, [Google'nun Gizlilik Politikası](https://policies.google.com/privacy) kapsamında Gmail aracılığıyla gerçekleştirilir.
 
 ## Saklama, güvenlik ve seçenekleriniz
 

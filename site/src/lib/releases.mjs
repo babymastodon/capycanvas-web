@@ -6,7 +6,10 @@ import rehypeRaw from 'rehype-raw';
 import rehypeSanitize, { defaultSchema } from 'rehype-sanitize';
 import rehypeStringify from 'rehype-stringify';
 
-export const releasesUrl = 'https://github.com/capyatelier/capycanvas/releases';
+const upstreamOwner = 'https://github.com/capyatelier/';
+const forkOwner = 'https://github.com/babymastodon/';
+export const releasesUrl = `${forkOwner}capycanvas/releases`;
+const onFork = url => url.startsWith(upstreamOwner) ? forkOwner + url.slice(upstreamOwner.length) : url;
 export const downloadsOrigin = 'https://downloads.capycanvas.art';
 export const releasesFeedUrl = `${downloadsOrigin}/releases.json`;
 export const platformFiles = {
@@ -40,7 +43,7 @@ export function publishedReleases(releases) {
       return {
         version,
         date: release.published_at.slice(0, 10),
-        url: release.html_url,
+        url: onFork(release.html_url),
         notes: renderNotes(release.body ?? '', { base: release.html_url, prefix: `notes-${version.replace(/[^\w-]/g, '-')}-` }),
         files: Object.fromEntries(Object.entries(platformFiles).flatMap(([platform, variants]) => {
           const found = Object.entries(variants).flatMap(([variant, name]) => {
@@ -96,7 +99,7 @@ function fitNotesIntoPage({ base, prefix, localImages }) {
           const url = new URL(value, base);
           node.properties[attribute] = localImages && attribute === 'src' && url.origin === new URL(base).origin
             ? `${url.pathname}${url.search}${url.hash}`
-            : url.href;
+            : onFork(url.href);
         }
         else delete node.properties[attribute];
       }

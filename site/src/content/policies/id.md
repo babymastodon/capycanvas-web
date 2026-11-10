@@ -24,7 +24,7 @@ Untuk versi yang didistribusikan di toko, kami mungkin menerima laporan kerusaka
 
 Jika Anda menghubungi kami, kami menerima nama pengguna atau alamat email, pesan, dan lampiran yang Anda berikan. Kami menggunakannya untuk merespons dan menyelidiki masalah yang dilaporkan.
 
-Dukungan melalui [masalah GitHub](https://github.com/capyatelier/capycanvas/issues) bersifat publik. Korespondensi email ditangani melalui Gmail berdasarkan [Kebijakan Privasi Google](https://policies.google.com/privacy).
+Dukungan melalui [masalah GitHub](https://github.com/babymastodon/capycanvas/issues) bersifat publik. Korespondensi email ditangani melalui Gmail berdasarkan [Kebijakan Privasi Google](https://policies.google.com/privacy).
 
 ## Retensi, keamanan, dan pilihan Anda
 

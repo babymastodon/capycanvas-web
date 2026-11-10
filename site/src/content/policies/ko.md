@@ -24,7 +24,7 @@ effectiveDate: "2026-11-10"
 
 문의 시 사용자가 제공한 사용자 이름 또는 이메일 주소, 메시지, 첨부 파일을 받습니다. 이 정보는 답변과 보고된 문제의 조사에 사용합니다.
 
-[GitHub Issues](https://github.com/capyatelier/capycanvas/issues)를 통한 지원 내용은 공개됩니다. 이메일은 Gmail을 통해 처리되며 [Google 개인정보처리방침](https://policies.google.com/privacy)이 적용됩니다.
+[GitHub Issues](https://github.com/babymastodon/capycanvas/issues)를 통한 지원 내용은 공개됩니다. 이메일은 Gmail을 통해 처리되며 [Google 개인정보처리방침](https://policies.google.com/privacy)이 적용됩니다.
 
 ## 보관, 보안 및 사용자 선택
 

@@ -24,7 +24,7 @@ effectiveDate: "2026-11-10"
 
 如果您聯絡我們，我們會收到您提供的使用者名稱或電子郵件位址、訊息及附件。我們使用這些資訊來回覆您並調查所回報的問題。
 
-透過 [GitHub Issues](https://github.com/capyatelier/capycanvas/issues) 進行的支援交流是公開的。電子郵件透過 Gmail 處理，適用 [Google 隱私權政策](https://policies.google.com/privacy)。
+透過 [GitHub Issues](https://github.com/babymastodon/capycanvas/issues) 進行的支援交流是公開的。電子郵件透過 Gmail 處理，適用 [Google 隱私權政策](https://policies.google.com/privacy)。
 
 ## 保留、安全與您的選擇
 

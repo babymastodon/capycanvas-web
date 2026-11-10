@@ -24,7 +24,7 @@ Für im Store vertriebene Versionen erhalten wir möglicherweise Absturzberichte
 
 Wenn Sie uns kontaktieren, erhalten wir den Benutzernamen oder die E-Mail-Adresse sowie die von Ihnen bereitgestellten Nachrichten und Anhänge. Wir nutzen sie, um auf gemeldete Probleme zu reagieren und diese zu untersuchen.
 
-Der Support für [GitHub issues](https://github.com/capyatelier/capycanvas/issues) ist öffentlich. Die E-Mail-Korrespondenz wird über Gmail gemäß [Googles Datenschutzrichtlinie](https://policies.google.com/privacy)] abgewickelt.
+Der Support für [GitHub issues](https://github.com/babymastodon/capycanvas/issues) ist öffentlich. Die E-Mail-Korrespondenz wird über Gmail gemäß [Googles Datenschutzrichtlinie](https://policies.google.com/privacy)] abgewickelt.
 
 ## Aufbewahrung, Sicherheit und Ihre Wahlmöglichkeiten
 

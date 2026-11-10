@@ -16,7 +16,7 @@ const read=path=>readFile(join(root,path),'utf8');
 const pages=['home','download','versions','ipadBeta','androidBeta','documentation','privacy'];
 const escape=text=>text.replaceAll('&','&amp;').replaceAll('"','&quot;').replaceAll('<','&lt;').replaceAll('>','&gt;');
 const escapeText=text=>escape(text).replaceAll("'",'&#39;');
-const lead=t=>escapeText(t.intro).replace('{feedback}',`<a href="https://github.com/capyatelier/capycanvas/issues">${escapeText(t.feedback)}</a>`);
+const lead=t=>escapeText(t.intro).replace('{feedback}',`<a href="https://github.com/babymastodon/capycanvas/issues">${escapeText(t.feedback)}</a>`);
 const segments={documentation:'docs',versions:'download/past-versions',ipadBeta:'download/ipad-beta',androidBeta:'download/android-beta'};
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(segments[p]??p)+'/'}`;
 const releaseFile=/^https:\/\/downloads\.capycanvas\.art\/v([^/]+)\/capycanvas-\1-(?:android\.apk|linux-x86_64\.flatpak|windows-(?:x64|arm64)-setup\.exe|macos-arm64\.dmg)$/;
@@ -101,8 +101,8 @@ for(const locale of Object.keys(languages)) {
       assert.ok(header.includes(`aria-label="${appName(locale)} · ${escape(content[locale].nav.home)}"`));
       assert.ok(header.includes(`<span>${appName(locale)}</span>`));
       assert.match(html,/class="nav-links"/); assert.match(html,/aria-current="page"/);
-      assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas"/);
-      assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas" target="_blank" rel="noopener noreferrer"/);
+      assert.match(html,/href="https:\/\/github.com\/babymastodon\/capycanvas"/);
+      assert.match(html,/href="https:\/\/github.com\/babymastodon\/capycanvas" target="_blank" rel="noopener noreferrer"/);
     }
     if(page==='download'||page==='versions') {
       for(const [,url] of html.matchAll(/href="(https:\/\/downloads\.capycanvas\.art\/[^"]+)"/g)) assert.match(url,releaseFile);

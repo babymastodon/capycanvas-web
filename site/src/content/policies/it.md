@@ -24,7 +24,7 @@ Per le versioni distribuite in negozio, potremmo ricevere rapporti sugli arresti
 
 Se ci contatti, riceviamo il nome utente o l'indirizzo email, i messaggi e gli allegati che fornisci. Li utilizziamo per rispondere e indagare sui problemi segnalati.
 
-Il supporto tramite [problemi GitHub](https://github.com/capyatelier/capycanvas/issues) è pubblico. La corrispondenza e-mail viene gestita tramite Gmail ai sensi della [Informativa sulla privacy di Google](https://policies.google.com/privacy).
+Il supporto tramite [problemi GitHub](https://github.com/babymastodon/capycanvas/issues) è pubblico. La corrispondenza e-mail viene gestita tramite Gmail ai sensi della [Informativa sulla privacy di Google](https://policies.google.com/privacy).
 
 ## Conservazione, sicurezza e le tue scelte
 

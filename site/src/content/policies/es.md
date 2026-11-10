@@ -24,7 +24,7 @@ Para las versiones distribuidas en tiendas, es posible que recibamos informes de
 
 Si se comunica con nosotros, recibimos el nombre de usuario o la dirección de correo electrónico, los mensajes y los archivos adjuntos que nos proporcione. Los utilizamos para responder e investigar los problemas reportados.
 
-El soporte a través de [problemas GitHub](https://github.com/capyatelier/capycanvas/issues) es público. La correspondencia por correo electrónico se maneja a través de Gmail según la [Política de privacidad de Google](https://policies.google.com/privacy).
+El soporte a través de [problemas GitHub](https://github.com/babymastodon/capycanvas/issues) es público. La correspondencia por correo electrónico se maneja a través de Gmail según la [Política de privacidad de Google](https://policies.google.com/privacy).
 
 ## Retención, seguridad y sus opciones
 
