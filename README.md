@@ -231,8 +231,8 @@ Tests build the site from `tests/fixtures/releases.json`, shaped like the GitHub
 response and including a draft, a pre-release and an unfinished upload, and from the empty
 `tests/fixtures/no-releases.json`, into `artifacts/release-pages/`.
 
-**After publishing a Capy Canvas release, run `npm run publish:downloads` and
-`gh workflow run site.yml --ref main`** so the Download page picks it up ([DEPLOYMENT.md](DEPLOYMENT.md)).
+**After publishing a Capy Canvas release, run `gh workflow run site.yml --ref main`**,
+which copies the release to R2 and redeploys, so the Download page picks it up ([DEPLOYMENT.md](DEPLOYMENT.md)).
 The online editor at editor.capycanvas.art is deployed separately from
 [capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release).
 

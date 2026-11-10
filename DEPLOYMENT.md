@@ -19,26 +19,29 @@ own environment. No account IDs, API tokens or keys are stored in the repository
 
 ## Deploy the site
 
-Every push to `main` runs `.github/workflows/site.yml`: the build, output and
-browser checks, then `npm run deploy:workers`, which uploads `docs/` to
-`capycanvas-web` and deploys the `www` redirect from `www/`. Pull requests run
-the checks only. Rerun a deploy with `gh workflow run site.yml --ref main`.
+Every push to `main` runs `.github/workflows/site.yml`: it copies new releases
+with `npm run publish:downloads`, runs the build, output and browser checks,
+then runs `npm run deploy:workers`, which uploads `docs/` to `capycanvas-web` and
+deploys the `www` redirect from `www/`. Pull requests run the checks only.
+Rerun a deploy with `gh workflow run site.yml --ref main`.
 
-The deploy step reads `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` from
-the repository's `cloudflare` environment, which only `main` may use. The token
-is an account API token from the **Edit Cloudflare Workers** template, limited
-to this account and the `capycanvas.art` zone. To deploy from your own machine
-instead, run `npm run deploy`, which runs the same checks first. Never edit the generated HTML; `docs/` is ignored
-and every build replaces it.
+The copy and deploy steps read `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`
+from the repository's `cloudflare` environment, which only `main` may use. The
+token is an account API token from the **Edit Cloudflare Workers** template,
+limited to this account and the `capycanvas.art` zone, with **Workers R2
+Storage: Edit** for the downloads bucket. To deploy from your own machine, run
+`npm run publish:downloads` and `npm run deploy`, which runs the same checks
+first. Never edit the generated HTML; `docs/` is ignored and every build
+replaces it.
 
 ## After publishing a Capy Canvas release
 
 The Download and Past versions pages are built from
-`https://downloads.capycanvas.art/releases.json`. After publishing a release on
-GitHub, copy it to R2 and rebuild the site:
+`https://downloads.capycanvas.art/releases.json`. After publishing or editing a
+release on GitHub, run the Site workflow so it copies the release and rebuilds
+the site:
 
 ```sh
-npm run publish:downloads
 gh workflow run site.yml --ref main
 ```
 
@@ -47,8 +50,7 @@ with `gh`, downloads each release missing from `releases.json`, checks every
 file against GitHub's SHA-256 digest, uploads it to
 `downloads.capycanvas.art/<tag>/<file>`, then rewrites `releases.json` with
 download URLs on that domain. Releases already listed keep their files and date
-and take their notes and GitHub link from the current release, so rerun both
-commands after editing release notes. Drafts are never copied; the site also
+and take their notes and GitHub link from the current release. Drafts are never copied; the site also
 hides pre-releases.
 
 ## Abuse and billing protection
