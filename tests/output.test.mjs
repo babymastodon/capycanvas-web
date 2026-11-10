@@ -19,7 +19,7 @@ const escapeText=text=>escape(text).replaceAll("'",'&#39;');
 const lead=t=>escapeText(t.intro).replace('{feedback}',`<a href="https://github.com/capyatelier/capycanvas/issues">${escapeText(t.feedback)}</a>`);
 const segments={documentation:'docs',versions:'download/past-versions',ipadBeta:'download/ipad-beta',androidBeta:'download/android-beta'};
 const route=(l,p)=>`${l==='en'?'':l+'/'}${p==='home'?'':(segments[p]??p)+'/'}`;
-const releaseFile=/^https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/v([^/]+)\/(?:capycanvas-\1-(?:android\.apk|linux-x86_64\.flatpak|windows-(?:x64|arm64)-setup\.exe|macos-arm64\.dmg)|capycanvas\.flatpakref)$/;
+const releaseFile=/^https:\/\/downloads\.capycanvas\.art\/v([^/]+)\/capycanvas-\1-(?:android\.apk|linux-x86_64\.flatpak|windows-(?:x64|arm64)-setup\.exe|macos-arm64\.dmg)$/;
 function shape(value) { return Array.isArray(value)?value.map(shape):value && typeof value==='object'?Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)])):typeof value; }
 for(const locale of Object.keys(languages)) {
   test(`${locale}: translation coverage matches English`,()=>assert.deepEqual(shape(content[locale]),shape(content.en)));
@@ -105,7 +105,7 @@ for(const locale of Object.keys(languages)) {
       assert.match(html,/href="https:\/\/github.com\/capyatelier\/capycanvas" target="_blank" rel="noopener noreferrer"/);
     }
     if(page==='download'||page==='versions') {
-      for(const [,url] of html.matchAll(/href="(https:\/\/github\.com\/capyatelier\/capycanvas\/releases\/download\/[^"]+)"/g)) assert.match(url,releaseFile);
+      for(const [,url] of html.matchAll(/href="(https:\/\/downloads\.capycanvas\.art\/[^"]+)"/g)) assert.match(url,releaseFile);
     }
     if(page==='versions') {
       assert.ok(html.includes(`href="${releasesUrl}"`));
