@@ -7,7 +7,7 @@ creates its DNS record; never point these names at another host by hand.
 | Hostname | Served by | Deployed with |
 | --- | --- | --- |
 | `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | Push to `main`, or `npm run deploy` |
-| `www.capycanvas.art` | Worker `capycanvas-www`, redirects to the apex | Push to `main`, or `npm run deploy` |
+| `www.capycanvas.art` | A redirect rule to the apex; Worker `capycanvas-www` holds the hostname | Push to `main`, or `npm run deploy` |
 | `downloads.capycanvas.art` | R2 bucket `capycanvas-downloads` | `npm run publish:downloads` |
 | `editor.capycanvas.art` | Worker `capycanvas-editor` | The **Deploy editor** workflow in [babymastodon/capycanvas-release](https://github.com/babymastodon/capycanvas-release) |
 | `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | The **Publish release updates** workflow in [babymastodon/capycanvas](https://github.com/babymastodon/capycanvas) |
@@ -69,7 +69,13 @@ Worker or R2 can cost money, so the account and zone keep these settings:
 - A rate-limiting rule blocks an IP for 10 seconds after 30 requests in
   10 seconds to `downloads.capycanvas.art`, or to `editor.capycanvas.art` at
   `/` and `/assets/pkg/`.
+- A redirect rule sends `www.capycanvas.art` to the apex before any Worker runs,
+  so `www` traffic never counts against the Workers limit. The `capycanvas-www`
+  Worker keeps the hostname's DNS record and certificate and serves the same
+  redirect if the rule is turned off.
 - Budget alerts email the account owner at $1 and $10 of usage charges.
+- GitHub asks a maintainer to approve workflow runs from every outside
+  contributor, so pull requests cannot spend Actions minutes unreviewed.
 
 ## Check
 
