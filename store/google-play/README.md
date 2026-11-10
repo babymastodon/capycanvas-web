@@ -33,7 +33,7 @@ for `art.capycanvas.editor`; it preserves any existing video URL.
 ```sh
 node site/scripts/store/google-play.mjs check
 node --test tests/google-play.test.mjs
-gh workflow run google-play.yml --repo capyatelier/capycanvas-web -f mode=publish
+gh workflow run google-play.yml --repo babymastodon/capycanvas-web -f mode=publish
 ```
 
 The `google-play` GitHub environment permits only `main` and holds two variables:
