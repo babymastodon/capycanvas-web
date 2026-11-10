@@ -44,6 +44,24 @@ uploads it to `downloads.capycanvas.art/<tag>/<file>`, then rewrites
 `releases.json` with download URLs on that domain. Releases already listed are
 not copied again. Drafts are never copied; the site also hides pre-releases.
 
+## Abuse and billing protection
+
+Static assets are served without limits or charges. Requests that reach a
+Worker or R2 can cost money, so the account and zone keep these settings:
+
+- Workers stay on the Free plan, whose daily request limit fails requests
+  instead of billing them. Keep `workers_dev` and `preview_urls` off and the
+  R2 buckets' `r2.dev` URLs disabled, so every request passes the zone rules.
+- A cache rule makes every `downloads.capycanvas.art` response cacheable and
+  ignores query strings in the cache key.
+- A WAF custom rule blocks `downloads.capycanvas.art` requests that carry a
+  query string or use a method other than GET or HEAD. Never link a download
+  with a query string.
+- A rate-limiting rule blocks an IP for 10 seconds after 30 requests in
+  10 seconds to `downloads.capycanvas.art`, or to `editor.capycanvas.art` at
+  `/` and `/assets/pkg/`.
+- Budget alerts email the account owner at $1 and $10 of usage charges.
+
 ## Check
 
 - `https://capycanvas.art/`, `/download/`, `/download/past-versions/`,
