@@ -9,8 +9,8 @@ creates its DNS record; never point these names at another host by hand.
 | `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | Push to `main`, or `npm run deploy` |
 | `www.capycanvas.art` | Worker `capycanvas-www`, redirects to the apex | Push to `main`, or `npm run deploy` |
 | `downloads.capycanvas.art` | R2 bucket `capycanvas-downloads` | `npm run publish:downloads` |
-| `editor.capycanvas.art` | Worker `capycanvas-editor` | `node release/cloudflare/deploy.mjs` in [capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release) |
-| `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | `bash packaging/flatpak/publish.sh` in [capyatelier/capycanvas](https://github.com/capyatelier/capycanvas) |
+| `editor.capycanvas.art` | Worker `capycanvas-editor` | The **Deploy editor** workflow in [babymastodon/capycanvas-release](https://github.com/babymastodon/capycanvas-release) |
+| `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | The **Publish release updates** workflow in [babymastodon/capycanvas](https://github.com/babymastodon/capycanvas) |
 
 Other deploys run from a maintainer's machine. Log in once with `npx wrangler login`
 as a member of the Cloudflare account that owns the `capycanvas.art` zone. If

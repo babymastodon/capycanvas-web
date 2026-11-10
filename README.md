@@ -1,7 +1,7 @@
 # Capy Canvas website
 
 The static, localized website for **[capycanvas.art](https://capycanvas.art)**.
-The drawing app lives in [capyatelier/capycanvas](https://github.com/capyatelier/capycanvas);
+The drawing app lives in [babymastodon/capycanvas](https://github.com/babymastodon/capycanvas);
 the Web Demo button opens [editor.capycanvas.art](https://editor.capycanvas.art).
 
 ## Develop
@@ -216,7 +216,7 @@ uses a separate invitation and tester list.
 Controls follow the editor's style: the 18px surface and 12px control radii become
 squircles where the browser supports `corner-shape`, menus keep round 10px corners,
 controls are 34px tall, and the selection colors and 8%/16% hover and pressed tints
-come from the editor's theme (`apps/layer-web/style.css` in capyatelier/capycanvas).
+come from the editor's theme (`apps/layer-web/style.css` in babymastodon/capycanvas).
 
 Page text is translated in every language; release notes stay in English. They are
 rendered from the release body's Markdown, or the upcoming Markdown file, and
@@ -234,7 +234,7 @@ response and including a draft, a pre-release and an unfinished upload, and from
 **After publishing a Capy Canvas release, run `gh workflow run site.yml --ref main`**,
 which copies the release to R2 and redeploys, so the Download page picks it up ([DEPLOYMENT.md](DEPLOYMENT.md)).
 The online editor at editor.capycanvas.art is deployed separately from
-[capyatelier/capycanvas-release](https://github.com/capyatelier/capycanvas-release).
+[babymastodon/capycanvas-release](https://github.com/babymastodon/capycanvas-release).
 
 ## Web app installation instructions
 
