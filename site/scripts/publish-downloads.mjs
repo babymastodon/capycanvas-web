@@ -5,10 +5,10 @@ import { mkdir, rm, writeFile } from 'node:fs/promises';
 import { join, resolve } from 'node:path';
 import { promisify } from 'node:util';
 import { downloadsOrigin, releasesFeedUrl } from '../src/lib/releases.mjs';
+import { allowDownloads, bucket } from './allow-downloads.mjs';
 
 const run = promisify(execFile);
 const repository = 'babymastodon/capycanvas';
-const bucket = 'capycanvas-downloads';
 const work = resolve('artifacts/downloads');
 const wrangler = resolve('node_modules/.bin/wrangler');
 
@@ -26,12 +26,7 @@ const sha256 = file => new Promise((done, fail) => {
   createReadStream(file).on('data', data => hash.update(data)).on('error', fail).on('end', () => done(`sha256:${hash.digest('hex')}`));
 });
 
-async function mirrored() {
-  const response = await fetch(releasesFeedUrl, { cache: 'no-store' });
-  if (response.status === 404) return [];
-  if (!response.ok) throw new Error(`Releases request failed with ${response.status} ${response.statusText}: ${releasesFeedUrl}`);
-  return response.json();
-}
+const mirrored = async () => JSON.parse((await run(wrangler, ['r2', 'object', 'get', `${bucket}/releases.json`, '--remote', '--pipe'], { maxBuffer: 64 * 1024 * 1024 })).stdout);
 
 async function mirror(release) {
   const tag = release.tag_name;
@@ -78,5 +73,6 @@ releases.sort((a, b) => b.published_at.localeCompare(a.published_at));
 await mkdir(work, { recursive: true });
 const feed = join(work, 'releases.json');
 await writeFile(feed, `${JSON.stringify(releases, null, 2)}\n`);
-await put('releases.json', feed, { type: 'application/json', cache: 'no-cache' });
+await allowDownloads();
+await put('releases.json', feed, { type: 'application/json', cache: 'public, max-age=300' });
 console.log(`${releasesFeedUrl}: ${releases.map(release => release.tag_name).join(' ')}`);

@@ -30,6 +30,8 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npm run publish:downloads
       - run: npm run build
+        env:
+          RELEASES_FILE: ${{ github.ref == 'refs/heads/main' && 'artifacts/downloads/releases.json' || '' }}
       - run: npm test
       - name: Browser checks
         run: npm run test:browser

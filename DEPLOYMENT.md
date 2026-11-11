@@ -30,15 +30,18 @@ The copy and deploy steps read `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID
 from the repository's `cloudflare` environment, which only `main` may use. The
 token is an account API token from the **Edit Cloudflare Workers** template,
 limited to this account and the `capycanvas.art` zone, with **Workers R2
-Storage: Edit** for the downloads bucket. To deploy from your own machine, run
-`npm run publish:downloads` and `npm run deploy`, which runs the same checks
-first. Never edit the generated HTML; `docs/` is ignored and every build
+Storage: Edit** for the downloads bucket and **Zone WAF: Edit** for the
+downloads allowlist. To deploy from your own machine, set `CLOUDFLARE_API_TOKEN`
+to such a token, then run `npm run publish:downloads` and `npm run deploy`,
+which runs the same checks first. Never edit the generated HTML; `docs/` is ignored and every build
 replaces it.
 
 ## After publishing a Capy Canvas release
 
 The Download and Past versions pages are built from
-`https://downloads.capycanvas.art/releases.json`. After publishing or editing a
+`https://downloads.capycanvas.art/releases.json`; the Site workflow builds from
+the copy `publish:downloads` just wrote, because the public one is cached for
+five minutes. After publishing or editing a
 release on GitHub, run the Site workflow so it copies the release and rebuilds
 the site:
 
@@ -49,8 +52,9 @@ gh workflow run site.yml --ref main
 `publish:downloads` lists the published releases of `babymastodon/capycanvas`
 with `gh`, downloads each release missing from `releases.json`, checks every
 file against GitHub's SHA-256 digest, uploads it to
-`downloads.capycanvas.art/<tag>/<file>`, then rewrites `releases.json` with
-download URLs on that domain. Releases already listed keep their files and date
+`downloads.capycanvas.art/<tag>/<file>`, adds the bucket's files to the
+downloads allowlist, then rewrites `releases.json` with download URLs on that
+domain. Releases already listed keep their files and date
 and take their notes and GitHub link from the current release. Drafts are never copied; the site also
 hides pre-releases.
 
@@ -68,9 +72,17 @@ Worker or R2 can cost money, so the account and zone keep these settings:
   R2 buckets' `r2.dev` URLs disabled, so every request passes the zone rules.
 - A cache rule makes every `downloads.capycanvas.art` response cacheable and
   ignores query strings in the cache key.
-- A WAF custom rule blocks `downloads.capycanvas.art` requests that carry a
-  query string or use a method other than GET or HEAD. Never link a download
-  with a query string.
+- WAF custom rules let through only GET requests without a query string for
+  files in the bucket, and block every other `downloads.capycanvas.art`
+  request before it reaches R2, so R2 reads stay near one per file per
+  Cloudflare data center however many requests arrive. HEAD skips the cache,
+  so it is blocked too. `site/scripts/allow-downloads.mjs` writes the rules
+  from the bucket listing, and every publisher (`publish:downloads`, Flatpak's
+  `publish.sh` and the editor's `deploy.mjs`) runs it after uploading and
+  before linking new files. The Free plan's five rules of 4,096 characters
+  hold about 370 files; delete old releases from the bucket before that runs
+  out. `releases.json` is cached for five minutes so that reading it cannot
+  bypass the cache. Never link a download with a query string.
 - A rate-limiting rule blocks an IP for 10 seconds after 30 requests in
   10 seconds to `downloads.capycanvas.art`.
 - A response header rule adds `Access-Control-Allow-Origin: *` to
