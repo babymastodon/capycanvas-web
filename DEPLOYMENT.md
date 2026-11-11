@@ -59,7 +59,12 @@ Static assets are served without limits or charges. Requests that reach a
 Worker or R2 can cost money, so the account and zone keep these settings:
 
 - Workers stay on the Free plan, whose daily request limit fails requests
-  instead of billing them. Keep `workers_dev` and `preview_urls` off and the
+  instead of billing them. Only `capycanvas-www` has Worker code, and the
+  redirect rule below answers its traffic first; the site, editor and Flatpak
+  Workers serve static assets only, which are neither billed nor counted. Files
+  over the 25 MiB asset limit (the editor's Wasm and large Flatpak objects) live
+  under `downloads.capycanvas.art/editor/` and `/flatpak/`, reached by `_redirects`
+  302s, so they share the download protections below. Keep `workers_dev` and `preview_urls` off and the
   R2 buckets' `r2.dev` URLs disabled, so every request passes the zone rules.
 - A cache rule makes every `downloads.capycanvas.art` response cacheable and
   ignores query strings in the cache key.
@@ -67,8 +72,10 @@ Worker or R2 can cost money, so the account and zone keep these settings:
   query string or use a method other than GET or HEAD. Never link a download
   with a query string.
 - A rate-limiting rule blocks an IP for 10 seconds after 30 requests in
-  10 seconds to `downloads.capycanvas.art`, or to `editor.capycanvas.art` at
-  `/` and `/assets/pkg/`.
+  10 seconds to `downloads.capycanvas.art`.
+- A response header rule adds `Access-Control-Allow-Origin: *` to
+  `downloads.capycanvas.art/editor/` responses, cached ones included, so the
+  editor can preload and fetch its Wasm across origins.
 - A redirect rule sends `www.capycanvas.art` to the apex before any Worker runs,
   so `www` traffic never counts against the Workers limit. The `capycanvas-www`
   Worker keeps the hostname's DNS record and certificate and serves the same
