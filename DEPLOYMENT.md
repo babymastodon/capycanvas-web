@@ -1,13 +1,14 @@
 # Publish capycanvas.art with Cloudflare
 
 Cloudflare serves the site, release downloads and DNS for `capycanvas.art`.
-Porkbun remains the registrar. Every hostname is attached by `wrangler`, which
-creates its DNS record; never point these names at another host by hand.
+Porkbun remains the registrar. Every hostname except `www` is attached by
+`wrangler`, which creates its DNS record; never point these names at another
+host by hand.
 
 | Hostname | Served by | Deployed with |
 | --- | --- | --- |
 | `capycanvas.art` | Worker `capycanvas-web`, static assets from `docs/` | Push to `main`, or `npm run deploy` |
-| `www.capycanvas.art` | A redirect rule to the apex; Worker `capycanvas-www` holds the hostname | Push to `main`, or `npm run deploy` |
+| `www.capycanvas.art` | A redirect rule to the apex | Zone rules in the Cloudflare dashboard |
 | `downloads.capycanvas.art` | R2 bucket `capycanvas-downloads` | `npm run publish:downloads` |
 | `editor.capycanvas.art` | Worker `capycanvas-editor` | The **Deploy editor** workflow in [babymastodon/capycanvas-release](https://github.com/babymastodon/capycanvas-release) |
 | `flatpak.capycanvas.art` | Worker `capycanvas-flatpak` | The **Publish release updates** workflow in [babymastodon/capycanvas](https://github.com/babymastodon/capycanvas) |
@@ -21,8 +22,8 @@ own environment. No account IDs, API tokens or keys are stored in the repository
 
 Every push to `main` runs `.github/workflows/site.yml`: it copies new releases
 with `npm run publish:downloads`, runs the build, output and browser checks,
-then runs `npm run deploy:workers`, which uploads `docs/` to `capycanvas-web` and
-deploys the `www` redirect from `www/`. Pull requests run the checks only.
+then runs `npm run deploy:workers`, which uploads `docs/` to `capycanvas-web`.
+Pull requests run the checks only.
 Rerun a deploy with `gh workflow run site.yml --ref main`.
 
 The copy and deploy steps read `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`
@@ -59,8 +60,7 @@ Static assets are served without limits or charges. Requests that reach a
 Worker or R2 can cost money, so the account and zone keep these settings:
 
 - Workers stay on the Free plan, whose daily request limit fails requests
-  instead of billing them. Only `capycanvas-www` has Worker code, and the
-  redirect rule below answers its traffic first; the site, editor and Flatpak
+  instead of billing them. No Worker has code: the site, editor and Flatpak
   Workers serve static assets only, which are neither billed nor counted. Files
   over the 25 MiB asset limit (the editor's Wasm and large Flatpak objects) live
   under `downloads.capycanvas.art/editor/` and `/flatpak/`, reached by `_redirects`
@@ -76,10 +76,8 @@ Worker or R2 can cost money, so the account and zone keep these settings:
 - A response header rule adds `Access-Control-Allow-Origin: *` to
   `downloads.capycanvas.art/editor/` responses, cached ones included, so the
   editor can preload and fetch its Wasm across origins.
-- A redirect rule sends `www.capycanvas.art` to the apex before any Worker runs,
-  so `www` traffic never counts against the Workers limit. The `capycanvas-www`
-  Worker keeps the hostname's DNS record and certificate and serves the same
-  redirect if the rule is turned off.
+- A redirect rule sends `www.capycanvas.art` to the apex. Its DNS record is a
+  proxied `AAAA 100::` placeholder, so nothing else answers `www`.
 - Budget alerts email the account owner at $1 and $10 of usage charges.
 - GitHub asks a maintainer to approve workflow runs from every outside
   contributor, so pull requests cannot spend Actions minutes unreviewed.

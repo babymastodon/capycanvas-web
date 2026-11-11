@@ -26,7 +26,7 @@
     "capture:demo:publish": "node site/scripts/publish-demos.mjs",
     "check:branding": "node site/scripts/check-branding.mjs",
     "deploy": "npm run check && npm run deploy:workers",
-    "deploy:workers": "wrangler deploy && wrangler deploy --config www/wrangler.jsonc",
+    "deploy:workers": "wrangler deploy",
     "publish:downloads": "node site/scripts/publish-downloads.mjs"
   },
   "devDependencies": {
