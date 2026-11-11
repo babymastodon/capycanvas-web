@@ -6,28 +6,79 @@ const refPrefix = 'downloads-';
 const expressionLimit = 4096;
 const safeKey = /^[\w.\/-]+$/;
 
-export function allowRules(keys) {
-  const allowed = `http.host eq "${host}" and http.request.method eq "GET" and http.request.uri.query eq "" and http.request.uri.path in {`;
-  const rules = [];
-  let paths = [];
-  const flush = () => {
-    rules.push({
-      ref: `${refPrefix}allow-${rules.length + 1}`,
-      description: 'Serve files that exist in the downloads bucket',
-      expression: `${allowed}${paths.join(' ')}}`,
-      action: 'skip',
-      action_parameters: { ruleset: 'current' },
-    });
-    paths = [];
-  };
+const field = 'http.request.uri.path';
+const set = values => `{${values.map(value => `"${value}"`).join(' ')}}`;
+
+const commonPrefix = values => values.reduce((prefix, value) => {
+  let length = 0;
+  while (length < prefix.length && prefix[length] === value[length]) length += 1;
+  return prefix.slice(0, length);
+});
+
+function groups(keys) {
+  const tails = new Map();
+  const add = (head, tail) => tails.set(head, [...tails.get(head) ?? [], tail]);
+  const families = new Map();
   for (const key of [...keys].sort()) {
     if (!safeKey.test(key)) throw new Error(`Cannot allow downloads key ${JSON.stringify(key)}`);
-    const path = `"/${key}"`;
-    if (paths.length && `${allowed}${[...paths, path].join(' ')}}`.length > expressionLimit) flush();
-    paths.push(path);
+    const release = key.match(/^v([^/]+)\/capycanvas-\1-/);
+    if (release) add(`/${release[0]}`, key.slice(release[0].length));
+    else {
+      const family = key.slice(0, key.indexOf('/') + 1);
+      families.set(family, [...families.get(family) ?? [], key]);
+    }
   }
-  if (paths.length) flush();
-  return [...rules, {
+  for (const members of families.values()) {
+    const prefix = members.length > 1 ? commonPrefix(members) : members[0].slice(0, members[0].lastIndexOf('/') + 1);
+    for (const key of members) add(`/${prefix}`, key.slice(prefix.length));
+  }
+  const grouped = new Map();
+  for (const [head, names] of tails) {
+    const id = `${head.length} ${names.join(' ')}`;
+    grouped.set(id, { length: head.length, heads: [...grouped.get(id)?.heads ?? [], head].sort(), tails: names });
+  }
+  return [...grouped.keys()].sort().map(id => grouped.get(id));
+}
+
+export function allowRules(keys) {
+  const allowed = `http.host eq "${host}" and http.request.method eq "GET" and http.request.uri.query eq "" and (`;
+  const room = expressionLimit - allowed.length - 1;
+  const condition = ({ length, heads, tails }) =>
+    `(substring(${field}, 0, ${length}) in ${set(heads)} and substring(${field}, ${length}) in ${set(tails)})`;
+  const bins = [[]];
+  const space = () => room - bins.at(-1).join(' or ').length - (bins.at(-1).length ? 4 : 0);
+  const fitting = (group, side) => {
+    let count = 0;
+    while (count < group[side].length && condition({ ...group, [side]: group[side].slice(0, count + 1) }).length <= space()) count += 1;
+    return count;
+  };
+  for (let group of groups(keys)) {
+    while (group) {
+      if (condition(group).length <= space()) {
+        bins.at(-1).push(condition(group));
+        group = null;
+        continue;
+      }
+      const side = ['heads', 'tails'].sort((a, b) => group[b].length - group[a].length).find(side => group[side].length > 1 && fitting(group, side));
+      if (!side) {
+        if (!bins.at(-1).length) throw new Error(`Downloads path ${group.heads[0]}${group.tails[0]} is too long for a rule`);
+        bins.push([]);
+        continue;
+      }
+      const count = fitting(group, side);
+      bins.at(-1).push(condition({ ...group, [side]: group[side].slice(0, count) }));
+      group = { ...group, [side]: group[side].slice(count) };
+      bins.push([]);
+    }
+  }
+  if (!bins.at(-1).length) bins.pop();
+  return [...bins.map((parts, index) => ({
+    ref: `${refPrefix}allow-${index + 1}`,
+    description: 'Serve files that exist in the downloads bucket',
+    expression: `${allowed}${parts.join(' or ')})`,
+    action: 'skip',
+    action_parameters: { ruleset: 'current' },
+  })), {
     ref: `${refPrefix}block`,
     description: 'Block every other downloads request before it reaches R2',
     expression: `http.host eq "${host}"`,

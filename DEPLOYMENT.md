@@ -79,9 +79,10 @@ Worker or R2 can cost money, so the account and zone keep these settings:
   so it is blocked too. `site/scripts/allow-downloads.mjs` writes the rules
   from the bucket listing, and every publisher (`publish:downloads`, Flatpak's
   `publish.sh` and the editor's `deploy.mjs`) runs it after uploading and
-  before linking new files. The Free plan's five rules of 4,096 characters
-  hold about 370 files; delete old releases from the bucket before that runs
-  out. `releases.json` is cached for five minutes so that reading it cannot
+  before linking new files. Releases with the same files share one list of
+  file names, so a release adds about 150 characters, mostly its editor Wasm
+  and Flatpak object hashes, and the Free plan's five rules of 4,096
+  characters hold about 100 releases. `releases.json` is cached for five minutes so that reading it cannot
   bypass the cache. Never link a download with a query string.
 - A rate-limiting rule blocks an IP for 10 seconds after 30 requests in
   10 seconds to `downloads.capycanvas.art`.
