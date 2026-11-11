@@ -86,14 +86,6 @@ Worker or R2 can cost money, so the account and zone keep these settings:
 
 ## Check
 
-The **Live check** workflow runs `npm run check:live` every 6 hours. It checks
-the site, the `www` and HTTP redirects, the editor and its Wasm redirect, the
-Flatpak reference and every file of the latest release on
-`downloads.capycanvas.art`, and GitHub emails the repository owner when it
-fails. GitHub pauses scheduled workflows after 60 days without repository
-activity; re-enable it from the Actions tab if that happens. Also check by hand
-after changing hosting:
-
 - `https://capycanvas.art/`, `/download/`, `/download/past-versions/`,
   `/download/ipad-beta/`, `/download/android-beta/` and `/docs/` in every
   locale, with language selection and both OS themes.
