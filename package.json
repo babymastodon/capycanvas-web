@@ -25,6 +25,7 @@
     "capture:demo:photo": "bash site/scripts/run-private-capture.sh site/scripts/capture-photo-demo.mjs",
     "capture:demo:publish": "node site/scripts/publish-demos.mjs",
     "check:branding": "node site/scripts/check-branding.mjs",
+    "check:live": "node site/scripts/check-live.mjs",
     "deploy": "npm run check && npm run deploy:workers",
     "deploy:workers": "wrangler deploy && wrangler deploy --config www/wrangler.jsonc",
     "publish:downloads": "node site/scripts/publish-downloads.mjs"
