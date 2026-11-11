@@ -1,5 +1,6 @@
 ---
 import { content } from '../data/content.mjs';
+import { flatpakRemote } from '../data/branding.mjs';
 import { releasesUrl } from '../lib/releases.mjs';
 import { releases, type PlatformFile, type Variant } from '../lib/release-data';
 import { appUrl, betaPages, feedbackUrl, platforms, route, type Locale, type Platform } from '../lib/site';
@@ -18,14 +19,15 @@ const name = (platform: Platform) => t.platforms[platforms.indexOf(platform)];
 const href = (file: PlatformFile) => file.install?.url ?? file.url;
 const architectures: Partial<Record<Variant, string>> = { x64: 'x86', arm64: 'arm' };
 const commands: Partial<Record<Variant, (file: PlatformFile) => string>> = { flatpak: file => `flatpak install --from ${href(file)}` };
-interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string; arch?: string; command?: string }
+const updates: Partial<Record<Variant, (file: PlatformFile) => string>> = { flatpak: file => `flatpak remote-modify --url=${new URL(href(file)).origin} ${flatpakRemote}` };
+interface Pick { platform: string; href: string; icon: keyof typeof paths; label: string; detail?: string; arch?: string; command?: string; update?: string }
 const picks: Pick[] = [
   ...platforms.flatMap((platform): Pick[] => {
     const beta = betaPages[platform];
     if (beta) return [{ platform, href: route(locale, beta), icon: platform, label: t.joinBeta, detail: content[locale][beta].title }];
     if (!latest) return [];
     return (files[platform] ?? []).map(file => ({
-      platform, href: href(file), icon: 'download', arch: architectures[file.variant], command: commands[file.variant]?.(file),
+      platform, href: href(file), icon: 'download', arch: architectures[file.variant], command: commands[file.variant]?.(file), update: updates[file.variant]?.(file),
       label: t.downloadFor.replace('{version}', latest.version).replace('{platform}', `${name(platform)} ${t.variants[file.variant]}`),
       detail: content[locale].versions.released.replace('{date}', formatDate(lang, latest.date)),
     }));
@@ -44,6 +46,11 @@ const picks: Pick[] = [
         <button type="button" data-copy={t.copy} data-copied={t.copied} title={t.copy} aria-label={t.copy}><Icon name="copy" /><Icon name="check" /></button>
       </div>}
       {pick.detail && <p>{pick.detail}</p>}
+      {pick.update && <p>{t.flatpakMoved}</p>}
+      {pick.update && <div class="command">
+        <code>{pick.update}</code>
+        <button type="button" data-copy={t.copy} data-copied={t.copied} title={t.copy} aria-label={t.copy}><Icon name="copy" /><Icon name="check" /></button>
+      </div>}
     </div>)}
   </div>
   <section class="other-platforms" aria-labelledby="other-platforms">

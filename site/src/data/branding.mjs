@@ -6,6 +6,7 @@ export const appNames = Object.freeze({
   de: globalName, vi: globalName, tr: globalName, it: globalName,
 });
 export const globalBrandAliases = [globalName, 'CapyCanvas'];
+export const flatpakRemote = 'capycanvas';
 
 /** @param {string} locale @returns {string} */
 export function appName(locale) {

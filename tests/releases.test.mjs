@@ -115,7 +115,8 @@ for (const locale of Object.keys(languages)) {
       ['other', '', 'https://editor.capycanvas.art/'],
     ]);
     assert.match(page, /<div data-platform="linux" hidden[^>]*><a [^>]+>[\s\S]*?<\/a><div class="command"/);
-    assert.deepEqual([...page.matchAll(/<code[^>]*>([^<]+)<\/code>/g)].map(([, command]) => command), [`flatpak install --from ${flatpakRef}`]);
+    assert.deepEqual([...page.matchAll(/<code[^>]*>([^<]+)<\/code>/g)].map(([, command]) => command), [`flatpak install --from ${flatpakRef}`, 'flatpak remote-modify --url=https://flatpak.capycanvas.art capycanvas']);
+    assert.ok(page.includes(`>${escapeText(t.download.flatpakMoved)}</p>`));
     assert.ok(page.includes(`data-copy="${escape(t.download.copy)}" data-copied="${escape(t.download.copied)}" title="${escape(t.download.copy)}" aria-label="${escape(t.download.copy)}"`));
     for (const name of ['Linux Flatpak', 'Windows x64', 'Windows ARM64', `macOS ${variants.appleSilicon}`]) {
       assert.ok(page.includes(`>${escapeText(t.download.downloadFor.replace('{version}', '1.0.2').replace('{platform}', name))}</a>`), name);
